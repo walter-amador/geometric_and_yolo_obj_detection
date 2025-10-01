@@ -2,9 +2,39 @@ import cv2
 import numpy as np
 
 
+def estimate_distance(pixel_size, real_size_cm=7.5, frame_width=640):
+    """
+    Estimates distance to AprilTag without camera calibration.
+
+    Args:
+        pixel_size: Average edge length of the tag in pixels
+        real_size_cm: Real physical size of the tag in cm (default: 7.5 cm)
+        frame_width: Frame width in pixels (default: 640)
+
+    Returns:
+        float: Estimated distance in centimeters
+
+    Note:
+        This uses an approximate focal length based on typical webcam FOV (~60-70 degrees).
+        For 640x480 resolution, focal length ≈ frame_width / (2 * tan(FOV/2))
+        Assuming 60° horizontal FOV: f ≈ 640 / (2 * tan(30°)) ≈ 554 pixels
+    """
+    # Approximate focal length for typical webcam (in pixels)
+    # This assumes ~60 degree horizontal field of view
+    focal_length_px = frame_width / (2 * np.tan(np.radians(30)))
+
+    # Distance = (focal_length * real_size) / pixel_size
+    # Prevent division by zero
+    if pixel_size > 0:
+        distance_cm = (focal_length_px * real_size_cm) / pixel_size
+        return distance_cm
+    return None
+
+
 def trackSign_CV(frame, detector, tag_to_action):
     """
     Detects AprilTags (36h11 family) in the frame and returns navigation decisions.
+    Estimates distance to each detected tag.
 
     Args:
         frame: Input BGR frame from camera
@@ -48,12 +78,18 @@ def trackSign_CV(frame, detector, tag_to_action):
                 edge_lengths.append(length)
             avg_edge_length = np.mean(edge_lengths)
 
+            # Estimate distance to the tag
+            distance_cm = estimate_distance(
+                avg_edge_length, real_size_cm=7.5, frame_width=640
+            )
+
             # Store detection data
             detection_info = {
                 "id": int(tag_id),
                 "center": (center_x, center_y),
                 "corners": corner_points,
                 "edge_length": avg_edge_length,
+                "distance_cm": distance_cm,
             }
             detection_data.append(detection_info)
 
@@ -89,16 +125,17 @@ def trackSign_CV(frame, detector, tag_to_action):
                 2,
             )
 
-            # Display edge length for stability verification
-            cv2.putText(
-                annotated_frame,
-                f"Size: {avg_edge_length:.1f}px",
-                (center_x - 30, center_y + text_y_offset - 45),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                0.4,
-                (255, 255, 0),
-                1,
-            )
+            # Display estimated distance
+            if distance_cm:
+                cv2.putText(
+                    annotated_frame,
+                    f"Dist: {distance_cm:.1f} cm",
+                    (center_x - 30, center_y + text_y_offset - 45),
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    0.5,
+                    (255, 0, 255),
+                    2,
+                )
 
     # Display detection count and current navigation decision
     info_text = f"Tags detected: {len(ids) if ids is not None else 0}"
@@ -180,18 +217,6 @@ def main():
         annotated_frame, navigation_decision, detection_data = trackSign_CV(
             frame, detector, tag_to_action
         )
-
-        # Print navigation decision to console
-        if navigation_decision:
-            print(f"Navigation Decision: {navigation_decision}")
-
-            # Print detailed detection data
-            for detection in detection_data:
-                print(
-                    f"  Tag ID {detection['id']}: "
-                    f"Center=({detection['center'][0]}, {detection['center'][1]}), "
-                    f"Size={detection['edge_length']:.1f}px"
-                )
 
         # Display the annotated frame
         cv2.imshow("AprilTag Navigation System", annotated_frame)
