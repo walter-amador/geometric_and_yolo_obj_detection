@@ -1,7 +1,5 @@
-"""
-CPSC 5207EL Assignment 1 - Machine Learning Component
-Live Video Traffic Sign Detection using Fine-tuned YOLOv8
-"""
+# Parts of the code below was generated with GitHub Copilot Agents using Claude Sonnet 4.5
+# Reference to the conversation: gx_yolo_prompt.json
 
 import cv2
 from ultralytics import YOLO
@@ -69,7 +67,7 @@ while True:
         break
 
     # Perform inference
-    results = model(frame, conf=0.25, iou=0.45, verbose=False)
+    results = model(frame, conf=0.5, iou=0.45, verbose=False)
 
     # Process results
     for result in results:

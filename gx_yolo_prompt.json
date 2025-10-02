@@ -1,0 +1,3112 @@
+{
+  "requesterUsername": "walter-amador",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/67434175",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_5134a086-1f86-4ee1-955c-9709b2d9828f",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 139
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 3,
+              "endColumn": 72
+            },
+            "text": "Using the traffic_sign_detection/yolov8n_finetuned/weights/best.pt\n\n On live video, draw YOLO boxes and the predicted label with confidence",
+            "kind": "text"
+          }
+        ],
+        "text": "Using the traffic_sign_detection/yolov8n_finetuned/weights/best.pt\n\n On live video, draw YOLO boxes and the predicted label with confidence"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+              "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py",
+              "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+              "scheme": "file"
+            },
+            "id": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py",
+            "name": " CPSC_5207EL_A1_Gx_ML.py"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "I'll help you create a script to perform live video detection using the fine-tuned YOLO model. Let me first check the current state of the ML file and then create a solution for live video detection. ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "prepareToolInvocation",
+          "toolName": "copilot_readFile"
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "Reading [](file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py)",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py": {
+                "$mid": 1,
+                "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+                "scheme": "file"
+              }
+            }
+          },
+          "pastTenseMessage": {
+            "value": "Read [](file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py)",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py": {
+                "$mid": 1,
+                "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+                "scheme": "file"
+              }
+            }
+          },
+          "isConfirmed": {
+            "type": 1
+          },
+          "isComplete": true,
+          "source": {
+            "type": "internal",
+            "label": "Built-In"
+          },
+          "toolCallId": "a8dac98d-26ce-4da6-9f5b-fd824c7fc8ff",
+          "toolId": "copilot_readFile"
+        },
+        {
+          "value": "\n\nNow I'll create a complete script for live video detection with YOLO bounding boxes and labels: ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "prepareToolInvocation",
+          "toolName": "copilot_createFile"
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "Creating [](file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py)",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py": {
+                "$mid": 1,
+                "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+                "scheme": "file"
+              }
+            }
+          },
+          "pastTenseMessage": {
+            "value": "Created [](file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py)",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py": {
+                "$mid": 1,
+                "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+                "scheme": "file"
+              }
+            }
+          },
+          "isConfirmed": {
+            "type": 1
+          },
+          "isComplete": true,
+          "source": {
+            "type": "internal",
+            "label": "Built-In"
+          },
+          "toolCallId": "283eb9e8-b485-4429-a402-9408b649bc2f",
+          "toolId": "copilot_createFile"
+        },
+        {
+          "kind": "textEditGroup",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+            "scheme": "file"
+          },
+          "edits": [
+            [
+              {
+                "text": "\"\"\"",
+                "range": {
+                  "startLineNumber": 1,
+                  "startColumn": 1,
+                  "endLineNumber": 1,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nCPSC 5207EL Assignment 1 - Machine Learning Component",
+                "range": {
+                  "startLineNumber": 2,
+                  "startColumn": 1,
+                  "endLineNumber": 2,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nLive Video Traffic Sign Detection using Fine-tuned YOLOv8",
+                "range": {
+                  "startLineNumber": 3,
+                  "startColumn": 1,
+                  "endLineNumber": 3,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n\"\"\"",
+                "range": {
+                  "startLineNumber": 4,
+                  "startColumn": 1,
+                  "endLineNumber": 4,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 5,
+                  "startColumn": 1,
+                  "endLineNumber": 5,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nimport cv2",
+                "range": {
+                  "startLineNumber": 6,
+                  "startColumn": 1,
+                  "endLineNumber": 6,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nfrom ultralytics import YOLO",
+                "range": {
+                  "startLineNumber": 7,
+                  "startColumn": 1,
+                  "endLineNumber": 7,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nimport numpy as np",
+                "range": {
+                  "startLineNumber": 8,
+                  "startColumn": 1,
+                  "endLineNumber": 8,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 9,
+                  "startColumn": 1,
+                  "endLineNumber": 9,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n# Load the fine-tuned YOLO model",
+                "range": {
+                  "startLineNumber": 10,
+                  "startColumn": 1,
+                  "endLineNumber": 10,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nMODEL_PATH = \"traffic_sign_detection/yolov8n_finetuned/weights/best.pt\"",
+                "range": {
+                  "startLineNumber": 11,
+                  "startColumn": 1,
+                  "endLineNumber": 11,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nmodel = YOLO(MODEL_PATH)",
+                "range": {
+                  "startLineNumber": 12,
+                  "startColumn": 1,
+                  "endLineNumber": 12,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 13,
+                  "startColumn": 1,
+                  "endLineNumber": 13,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n# Get class names from the model",
+                "range": {
+                  "startLineNumber": 14,
+                  "startColumn": 1,
+                  "endLineNumber": 14,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nclass_names = model.names",
+                "range": {
+                  "startLineNumber": 15,
+                  "startColumn": 1,
+                  "endLineNumber": 15,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 16,
+                  "startColumn": 1,
+                  "endLineNumber": 16,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n# Initialize video capture (0 for default webcam)",
+                "range": {
+                  "startLineNumber": 17,
+                  "startColumn": 1,
+                  "endLineNumber": 17,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\ncap = cv2.VideoCapture(0)",
+                "range": {
+                  "startLineNumber": 18,
+                  "startColumn": 1,
+                  "endLineNumber": 18,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 19,
+                  "startColumn": 1,
+                  "endLineNumber": 19,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n# Set video properties for better performance",
+                "range": {
+                  "startLineNumber": 20,
+                  "startColumn": 1,
+                  "endLineNumber": 20,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\ncap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)",
+                "range": {
+                  "startLineNumber": 21,
+                  "startColumn": 1,
+                  "endLineNumber": 21,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\ncap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)",
+                "range": {
+                  "startLineNumber": 22,
+                  "startColumn": 1,
+                  "endLineNumber": 22,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 23,
+                  "startColumn": 1,
+                  "endLineNumber": 23,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nprint(\"Starting live video detection...\")",
+                "range": {
+                  "startLineNumber": 24,
+                  "startColumn": 1,
+                  "endLineNumber": 24,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nprint(\"Press 'q' to quit\")",
+                "range": {
+                  "startLineNumber": 25,
+                  "startColumn": 1,
+                  "endLineNumber": 25,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nprint(f\"Loaded model from: {MODEL_PATH}\")",
+                "range": {
+                  "startLineNumber": 26,
+                  "startColumn": 1,
+                  "endLineNumber": 26,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nprint(f\"Detected classes: {class_names}\")",
+                "range": {
+                  "startLineNumber": 27,
+                  "startColumn": 1,
+                  "endLineNumber": 27,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 28,
+                  "startColumn": 1,
+                  "endLineNumber": 28,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n# FPS calculation variables",
+                "range": {
+                  "startLineNumber": 29,
+                  "startColumn": 1,
+                  "endLineNumber": 29,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nfps_counter = 0",
+                "range": {
+                  "startLineNumber": 30,
+                  "startColumn": 1,
+                  "endLineNumber": 30,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nfps_display = 0",
+                "range": {
+                  "startLineNumber": 31,
+                  "startColumn": 1,
+                  "endLineNumber": 31,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 32,
+                  "startColumn": 1,
+                  "endLineNumber": 32,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nwhile True:",
+                "range": {
+                  "startLineNumber": 33,
+                  "startColumn": 1,
+                  "endLineNumber": 33,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    # Read frame from webcam",
+                "range": {
+                  "startLineNumber": 34,
+                  "startColumn": 1,
+                  "endLineNumber": 34,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    ret, frame = cap.read()",
+                "range": {
+                  "startLineNumber": 35,
+                  "startColumn": 1,
+                  "endLineNumber": 35,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    ",
+                "range": {
+                  "startLineNumber": 36,
+                  "startColumn": 1,
+                  "endLineNumber": 36,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    if not ret:",
+                "range": {
+                  "startLineNumber": 37,
+                  "startColumn": 1,
+                  "endLineNumber": 37,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        print(\"Failed to grab frame\")",
+                "range": {
+                  "startLineNumber": 38,
+                  "startColumn": 1,
+                  "endLineNumber": 38,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        break",
+                "range": {
+                  "startLineNumber": 39,
+                  "startColumn": 1,
+                  "endLineNumber": 39,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    ",
+                "range": {
+                  "startLineNumber": 40,
+                  "startColumn": 1,
+                  "endLineNumber": 40,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    # Perform inference",
+                "range": {
+                  "startLineNumber": 41,
+                  "startColumn": 1,
+                  "endLineNumber": 41,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    results = model(frame, conf=0.25, iou=0.45, verbose=False)",
+                "range": {
+                  "startLineNumber": 42,
+                  "startColumn": 1,
+                  "endLineNumber": 42,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    ",
+                "range": {
+                  "startLineNumber": 43,
+                  "startColumn": 1,
+                  "endLineNumber": 43,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    # Process results",
+                "range": {
+                  "startLineNumber": 44,
+                  "startColumn": 1,
+                  "endLineNumber": 44,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    for result in results:",
+                "range": {
+                  "startLineNumber": 45,
+                  "startColumn": 1,
+                  "endLineNumber": 45,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        boxes = result.boxes",
+                "range": {
+                  "startLineNumber": 46,
+                  "startColumn": 1,
+                  "endLineNumber": 46,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        ",
+                "range": {
+                  "startLineNumber": 47,
+                  "startColumn": 1,
+                  "endLineNumber": 47,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        # Draw bounding boxes and labels",
+                "range": {
+                  "startLineNumber": 48,
+                  "startColumn": 1,
+                  "endLineNumber": 48,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        for box in boxes:",
+                "range": {
+                  "startLineNumber": 49,
+                  "startColumn": 1,
+                  "endLineNumber": 49,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            # Get box coordinates",
+                "range": {
+                  "startLineNumber": 50,
+                  "startColumn": 1,
+                  "endLineNumber": 50,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()",
+                "range": {
+                  "startLineNumber": 51,
+                  "startColumn": 1,
+                  "endLineNumber": 51,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)",
+                "range": {
+                  "startLineNumber": 52,
+                  "startColumn": 1,
+                  "endLineNumber": 52,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            ",
+                "range": {
+                  "startLineNumber": 53,
+                  "startColumn": 1,
+                  "endLineNumber": 53,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            # Get confidence and class",
+                "range": {
+                  "startLineNumber": 54,
+                  "startColumn": 1,
+                  "endLineNumber": 54,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            confidence = float(box.conf[0])",
+                "range": {
+                  "startLineNumber": 55,
+                  "startColumn": 1,
+                  "endLineNumber": 55,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            class_id = int(box.cls[0])",
+                "range": {
+                  "startLineNumber": 56,
+                  "startColumn": 1,
+                  "endLineNumber": 56,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            class_name = class_names[class_id]",
+                "range": {
+                  "startLineNumber": 57,
+                  "startColumn": 1,
+                  "endLineNumber": 57,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            ",
+                "range": {
+                  "startLineNumber": 58,
+                  "startColumn": 1,
+                  "endLineNumber": 58,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            # Draw bounding box",
+                "range": {
+                  "startLineNumber": 59,
+                  "startColumn": 1,
+                  "endLineNumber": 59,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)",
+                "range": {
+                  "startLineNumber": 60,
+                  "startColumn": 1,
+                  "endLineNumber": 60,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            ",
+                "range": {
+                  "startLineNumber": 61,
+                  "startColumn": 1,
+                  "endLineNumber": 61,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            # Prepare label text",
+                "range": {
+                  "startLineNumber": 62,
+                  "startColumn": 1,
+                  "endLineNumber": 62,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            label = f\"{class_name}: {confidence:.2f}\"",
+                "range": {
+                  "startLineNumber": 63,
+                  "startColumn": 1,
+                  "endLineNumber": 63,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            ",
+                "range": {
+                  "startLineNumber": 64,
+                  "startColumn": 1,
+                  "endLineNumber": 64,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            # Get text size for background",
+                "range": {
+                  "startLineNumber": 65,
+                  "startColumn": 1,
+                  "endLineNumber": 65,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            (text_width, text_height), baseline = cv2.getTextSize(",
+                "range": {
+                  "startLineNumber": 66,
+                  "startColumn": 1,
+                  "endLineNumber": 66,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2",
+                "range": {
+                  "startLineNumber": 67,
+                  "startColumn": 1,
+                  "endLineNumber": 67,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            )",
+                "range": {
+                  "startLineNumber": 68,
+                  "startColumn": 1,
+                  "endLineNumber": 68,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            ",
+                "range": {
+                  "startLineNumber": 69,
+                  "startColumn": 1,
+                  "endLineNumber": 69,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            # Draw background rectangle for text",
+                "range": {
+                  "startLineNumber": 70,
+                  "startColumn": 1,
+                  "endLineNumber": 70,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            cv2.rectangle(",
+                "range": {
+                  "startLineNumber": 71,
+                  "startColumn": 1,
+                  "endLineNumber": 71,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                frame,",
+                "range": {
+                  "startLineNumber": 72,
+                  "startColumn": 1,
+                  "endLineNumber": 72,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                (x1, y1 - text_height - baseline - 5),",
+                "range": {
+                  "startLineNumber": 73,
+                  "startColumn": 1,
+                  "endLineNumber": 73,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                (x1 + text_width, y1),",
+                "range": {
+                  "startLineNumber": 74,
+                  "startColumn": 1,
+                  "endLineNumber": 74,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                (0, 255, 0),",
+                "range": {
+                  "startLineNumber": 75,
+                  "startColumn": 1,
+                  "endLineNumber": 75,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                -1",
+                "range": {
+                  "startLineNumber": 76,
+                  "startColumn": 1,
+                  "endLineNumber": 76,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            )",
+                "range": {
+                  "startLineNumber": 77,
+                  "startColumn": 1,
+                  "endLineNumber": 77,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            ",
+                "range": {
+                  "startLineNumber": 78,
+                  "startColumn": 1,
+                  "endLineNumber": 78,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            # Draw label text",
+                "range": {
+                  "startLineNumber": 79,
+                  "startColumn": 1,
+                  "endLineNumber": 79,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            cv2.putText(",
+                "range": {
+                  "startLineNumber": 80,
+                  "startColumn": 1,
+                  "endLineNumber": 80,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                frame,",
+                "range": {
+                  "startLineNumber": 81,
+                  "startColumn": 1,
+                  "endLineNumber": 81,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                label,",
+                "range": {
+                  "startLineNumber": 82,
+                  "startColumn": 1,
+                  "endLineNumber": 82,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                (x1, y1 - 5),",
+                "range": {
+                  "startLineNumber": 83,
+                  "startColumn": 1,
+                  "endLineNumber": 83,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                cv2.FONT_HERSHEY_SIMPLEX,",
+                "range": {
+                  "startLineNumber": 84,
+                  "startColumn": 1,
+                  "endLineNumber": 84,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                0.6,",
+                "range": {
+                  "startLineNumber": 85,
+                  "startColumn": 1,
+                  "endLineNumber": 85,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                (0, 0, 0),",
+                "range": {
+                  "startLineNumber": 86,
+                  "startColumn": 1,
+                  "endLineNumber": 86,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n                2",
+                "range": {
+                  "startLineNumber": 87,
+                  "startColumn": 1,
+                  "endLineNumber": 87,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n            )",
+                "range": {
+                  "startLineNumber": 88,
+                  "startColumn": 1,
+                  "endLineNumber": 88,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    ",
+                "range": {
+                  "startLineNumber": 89,
+                  "startColumn": 1,
+                  "endLineNumber": 89,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    # Display FPS",
+                "range": {
+                  "startLineNumber": 90,
+                  "startColumn": 1,
+                  "endLineNumber": 90,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    fps_counter += 1",
+                "range": {
+                  "startLineNumber": 91,
+                  "startColumn": 1,
+                  "endLineNumber": 91,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    if fps_counter % 10 == 0:",
+                "range": {
+                  "startLineNumber": 92,
+                  "startColumn": 1,
+                  "endLineNumber": 92,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        fps_display = fps_counter / 10",
+                "range": {
+                  "startLineNumber": 93,
+                  "startColumn": 1,
+                  "endLineNumber": 93,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        fps_counter = 0",
+                "range": {
+                  "startLineNumber": 94,
+                  "startColumn": 1,
+                  "endLineNumber": 94,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    ",
+                "range": {
+                  "startLineNumber": 95,
+                  "startColumn": 1,
+                  "endLineNumber": 95,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    cv2.putText(",
+                "range": {
+                  "startLineNumber": 96,
+                  "startColumn": 1,
+                  "endLineNumber": 96,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        frame,",
+                "range": {
+                  "startLineNumber": 97,
+                  "startColumn": 1,
+                  "endLineNumber": 97,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        f\"FPS: {fps_display:.1f}\",",
+                "range": {
+                  "startLineNumber": 98,
+                  "startColumn": 1,
+                  "endLineNumber": 98,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        (10, 30),",
+                "range": {
+                  "startLineNumber": 99,
+                  "startColumn": 1,
+                  "endLineNumber": 99,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        cv2.FONT_HERSHEY_SIMPLEX,",
+                "range": {
+                  "startLineNumber": 100,
+                  "startColumn": 1,
+                  "endLineNumber": 100,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        0.7,",
+                "range": {
+                  "startLineNumber": 101,
+                  "startColumn": 1,
+                  "endLineNumber": 101,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        (255, 255, 255),",
+                "range": {
+                  "startLineNumber": 102,
+                  "startColumn": 1,
+                  "endLineNumber": 102,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        2",
+                "range": {
+                  "startLineNumber": 103,
+                  "startColumn": 1,
+                  "endLineNumber": 103,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    )",
+                "range": {
+                  "startLineNumber": 104,
+                  "startColumn": 1,
+                  "endLineNumber": 104,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    ",
+                "range": {
+                  "startLineNumber": 105,
+                  "startColumn": 1,
+                  "endLineNumber": 105,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    # Display the frame",
+                "range": {
+                  "startLineNumber": 106,
+                  "startColumn": 1,
+                  "endLineNumber": 106,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    cv2.imshow(\"Traffic Sign Detection - Live Video\", frame)",
+                "range": {
+                  "startLineNumber": 107,
+                  "startColumn": 1,
+                  "endLineNumber": 107,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    ",
+                "range": {
+                  "startLineNumber": 108,
+                  "startColumn": 1,
+                  "endLineNumber": 108,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    # Break loop on 'q' key press",
+                "range": {
+                  "startLineNumber": 109,
+                  "startColumn": 1,
+                  "endLineNumber": 109,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    if cv2.waitKey(1) & 0xFF == ord('q'):",
+                "range": {
+                  "startLineNumber": 110,
+                  "startColumn": 1,
+                  "endLineNumber": 110,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        break",
+                "range": {
+                  "startLineNumber": 111,
+                  "startColumn": 1,
+                  "endLineNumber": 111,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 112,
+                  "startColumn": 1,
+                  "endLineNumber": 112,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n# Release resources",
+                "range": {
+                  "startLineNumber": 113,
+                  "startColumn": 1,
+                  "endLineNumber": 113,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\ncap.release()",
+                "range": {
+                  "startLineNumber": 114,
+                  "startColumn": 1,
+                  "endLineNumber": 114,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\ncv2.destroyAllWindows()",
+                "range": {
+                  "startLineNumber": 115,
+                  "startColumn": 1,
+                  "endLineNumber": 115,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\nprint(\"Video capture stopped.\")",
+                "range": {
+                  "startLineNumber": 116,
+                  "startColumn": 1,
+                  "endLineNumber": 116,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 117,
+                  "startColumn": 1,
+                  "endLineNumber": 117,
+                  "endColumn": 1
+                }
+              }
+            ],
+            []
+          ],
+          "done": true
+        },
+        {
+          "value": "\n\nPerfect! I've created a complete live video detection script. The script includes:\n\n**Key Features:**\n- ✅ Loads the fine-tuned YOLO model from ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/traffic_sign_detection/yolov8n_finetuned/weights/best.pt",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/traffic_sign_detection/yolov8n_finetuned/weights/best.pt",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/traffic_sign_detection/yolov8n_finetuned/weights/best.pt",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "\n- ✅ Opens webcam for live video feed\n- ✅ Draws green bounding boxes around detected traffic signs\n- ✅ Displays predicted label with confidence score\n- ✅ Shows FPS counter for performance monitoring\n- ✅ Press 'q' to quit\n\n**The script does:**\n1. Loads your fine-tuned YOLOv8 model\n2. Captures live video from your webcam\n3. Runs inference on each frame with confidence threshold of 0.25\n4. Draws bounding boxes in green\n5. Adds labels with class name and confidence score\n6. Shows real-time FPS\n\nTo run the script: ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "prepareToolInvocation",
+          "toolName": "run_in_terminal"
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": "Using \"Run in Terminal\"",
+          "isConfirmed": {
+            "type": 4
+          },
+          "isComplete": true,
+          "source": {
+            "type": "internal",
+            "label": "Built-In"
+          },
+          "toolSpecificData": {
+            "kind": "terminal",
+            "terminalToolSessionId": "ac09e13f-f07f-46aa-9216-394739a620d6",
+            "commandLine": {
+              "original": "cd /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1 && python3 \" CPSC_5207EL_A1_Gx_ML.py\"",
+              "toolEdited": "python3 \" CPSC_5207EL_A1_Gx_ML.py\""
+            },
+            "language": "sh"
+          },
+          "toolCallId": "9850ed77-b6b9-4db7-9e67-8fd70dea3afd",
+          "toolId": "run_in_terminal"
+        }
+      ],
+      "responseId": "response_5553b2a5-d605-42a3-ac79-5aaec037246d",
+      "result": {
+        "timings": {
+          "firstProgress": 4210,
+          "totalElapsed": 55421
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\" CPSC_5207EL_A1_Gx_ML.py\" filePath=\"/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py\">\n\n</attachment>\n\n</attachments>\n<context>\nThe current date is October 2, 2025.\nTerminals:\nTerminal: zsh\nLast Command: python3 fine_tune_yolo.py\nCwd: /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1\nExit Code: 0\nTerminal: zsh\n<todoList>\nNo todo list found.\n</todoList>\n\n</context>\n<editorContext>\nThe user's current file is /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py. \n</editorContext>\n<reminderInstructions>\nWhen using the replace_string_in_file tool, include 3-5 lines of unchanged code before and after the string you want to replace, to make it unambiguous which part of the file should be edited.\n\n</reminderInstructions>\n<userRequest>\nUsing the traffic_sign_detection/yolov8n_finetuned/weights/best.pt\n\n On live video, draw YOLO boxes and the predicted label with confidence\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "renderedGlobalContext": [
+            {
+              "type": 1,
+              "text": "<environment_info>\nThe user's current OS is: macOS\nThe user's default shell is: \"zsh\". When you generate terminal commands, please generate them correctly for this shell.\n</environment_info>\n<workspace_info>\nI am working in a workspace with the following folders:\n- /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1 \nI am working in a workspace that has the following structure:\n```\nCPSC_5207EL_A1_Gx_ML.py\ncalibration_images.zip\nCPSC_5207EL_A1_GX_CV.py\ndata_augmentation.py\nfine_tune_yolo.py\ngx_cv_prompt.json\nrequirements.txt\nyolov8n.pt\n__pycache__/\n\tCPSC_5207EL_A1_GX_CV.cpython-39.pyc\ndataset/\n\tdata.yaml\n\tREADME.dataset.txt\n\tREADME.roboflow.txt\n\ttest/\n\t\timages/\n\t\t\t22ed5523-5d21-45f9-b043-ceca376d3ac4_jpeg.rf.22a5d46566666445a8cd45d5c692a65b.jpg\n\t\t\t3387d129-b183-41e1-9eeb-450f01ca4ee2_jpeg.rf.88a95df6ef12289ce91494532f425b80.jpg\n\t\t\t50337d4f-08e3-4d2b-b10a-8558c20c06e8_jpeg.rf.54163cafb0f84b9632d67ac09f744b86.jpg\n\t\t\t50784a40-051b-4744-9438-c373f96624bb_jpeg.rf.3209ac6fe4652d644d94f7050abe8626.jpg\n\t\t\ta8dd69e1-3327-45d7-b755-957c5a2b707e_jpeg.rf.be3c1e555657ab3050ece43260ab0d4d.jpg\n\t\t\tIMG_5575_jpeg.rf.803173f292dd67e161b3d7d7369f369b.jpg\n\t\t\tIMG_5576_jpeg.rf.85e6edde0c06e9cec0c16ed49092da77.jpg\n\t\t\tIMG_5600_jpeg.rf.439a41151dae701197bf54effe7a2ab7.jpg\n\t\t\tIMG_5602_jpeg.rf.52feb6c45d4615a58c22a606d691416f.jpg\n\t\t\tIMG_5604_jpeg.rf.d471db30319e20de056bacfa9c4b583e.jpg\n\t\t\tIMG_5613_jpeg.rf.8806a9d4d08d7b3a058bce11c91326b8.jpg\n\t\t\tIMG_5614_jpeg.rf.f169368fdc3c4c9c6fc9828fbf94c87b.jpg\n\t\t\tIMG_5619_jpeg.rf.ae59862a986feb773c95ab475e9ddff2.jpg\n\t\t\tIMG_5624_jpeg.rf.2e1bd7fcc946f557c7ab1034cbc8dd54.jpg\n\t\t\tIMG_5625_jpeg.rf.243f52bb88325fa75739251fc9031f33.jpg\n\t\t\tIMG_5626_jpeg.rf.8ba86836551752d33df66875f47f5de5.jpg\n\t\t\tIMG_5631_jpeg.rf.69bbd370f74f524aad6bd3a2af6bed5a.jpg\n\t\t\t...\n\t\tlabels/\n\t\t\t...\n\ttrain/\n\t\tlabels.cache\n\t\timages/\n\t\t\t...\n\t\tlabels/\n\t\t\t...\n\tvalid/\n\t\tlabels.cache\n\t\timages/\n\t\tlabels/\nruns/\n\tdetect/\n\t\tpredict/\n\t\tval/\ntraffic_sign_detection/\n\tyolov8n_finetuned/\n\t\targs.yaml\n\t\tBoxF1_curve.png\n\t\tBoxP_curve.png\n\t\tBoxPR_curve.png\n\t\tBoxR_curve.png\n\t\tconfusion_matrix_normalized.png\n\t\tconfusion_matrix.png\n\t\tlabels.jpg\n\t\tresults.csv\n\t\tresults.png\n\t\ttrain_batch0.jpg\n\t\ttrain_batch1.jpg\n\t\ttrain_batch1260.jpg\n\t\ttrain_batch1261.jpg\n\t\ttrain_batch1262.jpg\n\t\ttrain_batch2.jpg\n\t\tval_batch0_labels.jpg\n\t\tval_batch0_pred.jpg\n\t\tval_batch1_labels.jpg\n\t\tval_batch1_pred.jpg\n\t\tweights/\n```\nThis is the state of the context at this point in the conversation. The view of the workspace structure may be truncated. You can use tools to collect more context if needed.\n</workspace_info>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "I'll help you create a script to perform live video detection using the fine-tuned YOLO model. Let me first check the current state of the ML file and then create a solution for live video detection. ",
+              "toolCalls": [
+                {
+                  "name": "read_file",
+                  "arguments": "{\"filePath\": \"/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py\", \"startLine\": 1, \"endLine\": 50}",
+                  "id": "tooluse_OvzhdoVsQOqpgoFTAsuk2Q__vscode-1759350995162"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "46fde8fd-526e-46bb-b6e2-2306b41f0bf7"
+            },
+            {
+              "response": "\n\nNow I'll create a complete script for live video detection with YOLO bounding boxes and labels: ",
+              "toolCalls": [
+                {
+                  "name": "create_file",
+                  "arguments": "{\"filePath\": \"/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py\", \"content\": \"\\\"\\\"\\\"\\nCPSC 5207EL Assignment 1 - Machine Learning Component\\nLive Video Traffic Sign Detection using Fine-tuned YOLOv8\\n\\\"\\\"\\\"\\n\\nimport cv2\\nfrom ultralytics import YOLO\\nimport numpy as np\\n\\n# Load the fine-tuned YOLO model\\nMODEL_PATH = \\\"traffic_sign_detection/yolov8n_finetuned/weights/best.pt\\\"\\nmodel = YOLO(MODEL_PATH)\\n\\n# Get class names from the model\\nclass_names = model.names\\n\\n# Initialize video capture (0 for default webcam)\\ncap = cv2.VideoCapture(0)\\n\\n# Set video properties for better performance\\ncap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)\\ncap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)\\n\\nprint(\\\"Starting live video detection...\\\")\\nprint(\\\"Press 'q' to quit\\\")\\nprint(f\\\"Loaded model from: {MODEL_PATH}\\\")\\nprint(f\\\"Detected classes: {class_names}\\\")\\n\\n# FPS calculation variables\\nfps_counter = 0\\nfps_display = 0\\n\\nwhile True:\\n    # Read frame from webcam\\n    ret, frame = cap.read()\\n    \\n    if not ret:\\n        print(\\\"Failed to grab frame\\\")\\n        break\\n    \\n    # Perform inference\\n    results = model(frame, conf=0.25, iou=0.45, verbose=False)\\n    \\n    # Process results\\n    for result in results:\\n        boxes = result.boxes\\n        \\n        # Draw bounding boxes and labels\\n        for box in boxes:\\n            # Get box coordinates\\n            x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()\\n            x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)\\n            \\n            # Get confidence and class\\n            confidence = float(box.conf[0])\\n            class_id = int(box.cls[0])\\n            class_name = class_names[class_id]\\n            \\n            # Draw bounding box\\n            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)\\n            \\n            # Prepare label text\\n            label = f\\\"{class_name}: {confidence:.2f}\\\"\\n            \\n            # Get text size for background\\n            (text_width, text_height), baseline = cv2.getTextSize(\\n                label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2\\n            )\\n            \\n            # Draw background rectangle for text\\n            cv2.rectangle(\\n                frame,\\n                (x1, y1 - text_height - baseline - 5),\\n                (x1 + text_width, y1),\\n                (0, 255, 0),\\n                -1\\n            )\\n            \\n            # Draw label text\\n            cv2.putText(\\n                frame,\\n                label,\\n                (x1, y1 - 5),\\n                cv2.FONT_HERSHEY_SIMPLEX,\\n                0.6,\\n                (0, 0, 0),\\n                2\\n            )\\n    \\n    # Display FPS\\n    fps_counter += 1\\n    if fps_counter % 10 == 0:\\n        fps_display = fps_counter / 10\\n        fps_counter = 0\\n    \\n    cv2.putText(\\n        frame,\\n        f\\\"FPS: {fps_display:.1f}\\\",\\n        (10, 30),\\n        cv2.FONT_HERSHEY_SIMPLEX,\\n        0.7,\\n        (255, 255, 255),\\n        2\\n    )\\n    \\n    # Display the frame\\n    cv2.imshow(\\\"Traffic Sign Detection - Live Video\\\", frame)\\n    \\n    # Break loop on 'q' key press\\n    if cv2.waitKey(1) & 0xFF == ord('q'):\\n        break\\n\\n# Release resources\\ncap.release()\\ncv2.destroyAllWindows()\\nprint(\\\"Video capture stopped.\\\")\\n\"}",
+                  "id": "tooluse_eAAokYG8RPa7y0x5JJhiCA__vscode-1759350995163"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "ec865f7b-940e-4d1c-93c5-744ef3876822"
+            },
+            {
+              "response": "\n\nPerfect! I've created a complete live video detection script. The script includes:\n\n**Key Features:**\n- ✅ Loads the fine-tuned YOLO model from `traffic_sign_detection/yolov8n_finetuned/weights/best.pt`\n- ✅ Opens webcam for live video feed\n- ✅ Draws green bounding boxes around detected traffic signs\n- ✅ Displays predicted label with confidence score\n- ✅ Shows FPS counter for performance monitoring\n- ✅ Press 'q' to quit\n\n**The script does:**\n1. Loads your fine-tuned YOLOv8 model\n2. Captures live video from your webcam\n3. Runs inference on each frame with confidence threshold of 0.25\n4. Draws bounding boxes in green\n5. Adds labels with class name and confidence score\n6. Shows real-time FPS\n\nTo run the script: ",
+              "toolCalls": [
+                {
+                  "name": "run_in_terminal",
+                  "arguments": "{\"command\": \"cd /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1 && python3 \\\" CPSC_5207EL_A1_Gx_ML.py\\\"\", \"explanation\": \"Running the live video detection script with the fine-tuned YOLO model\", \"isBackground\": true}",
+                  "id": "tooluse__lCD8P7RTCWf3OKNMpR4RA__vscode-1759350995164"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "dd3de295-644e-44cb-855c-61591e2ed33c"
+            }
+          ],
+          "toolCallResults": {
+            "tooluse_OvzhdoVsQOqpgoFTAsuk2Q__vscode-1759350995162": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 23,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "Hoe",
+                      "children": [
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "(The file `",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "` exists, but is empty)",
+                          "lineBreakBefore": false
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            },
+            "tooluse_eAAokYG8RPa7y0x5JJhiCA__vscode-1759350995163": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 23,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "qy",
+                      "children": [
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "The following files were successfully edited:",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            },
+            "tooluse__lCD8P7RTCWf3OKNMpR4RA__vscode-1759350995164": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 21,
+                  "value": "The user cancelled the tool call."
+                }
+              ]
+            }
+          },
+          "modelMessageId": "ccd9b933-40e4-4268-b543-82e5813e7a44",
+          "responseId": "18400e04-acf7-4944-b14c-9a0013e322b4",
+          "sessionId": "58afe44b-cc6f-452f-9b6b-288460980b72",
+          "agentId": "github.copilot.editsAgent"
+        },
+        "details": "Claude Sonnet 4.5 (Preview) • 1x"
+      },
+      "responseMarkdownInfo": [],
+      "followups": [],
+      "isCanceled": true,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.31.3",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1759412615462,
+      "modelId": "copilot/claude-sonnet-4.5"
+    },
+    {
+      "requestId": "request_23c88dc2-e61c-4a94-b2f3-c4533af8cdb3",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 69
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 70
+            },
+            "text": "Implement the function estimate_distance into CPSC_5207EL_A1_Gx_ML.py",
+            "kind": "text"
+          }
+        ],
+        "text": "Implement the function estimate_distance into CPSC_5207EL_A1_Gx_ML.py"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_GX_CV.PY",
+              "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_GX_CV.PY",
+              "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_GX_CV.PY",
+              "scheme": "file"
+            },
+            "id": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_GX_CV.PY",
+            "name": "CPSC_5207EL_A1_GX_CV.PY"
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+              "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+              "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+              "scheme": "file"
+            },
+            "id": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "name": "CPSC_5207EL_A1_Gx_ML.py"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "I'll add the `estimate_distance` function to the YOLO ML script. This function will estimate the distance to detected traffic signs based on their pixel size, similar to how it works in the CV file. ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "prepareToolInvocation",
+          "toolName": "copilot_replaceString"
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "presentation": "hidden",
+          "invocationMessage": "Using \"Replace String in File\"",
+          "isConfirmed": {
+            "type": 1
+          },
+          "isComplete": true,
+          "source": {
+            "type": "internal",
+            "label": "Built-In"
+          },
+          "toolCallId": "b171f9fd-711b-458d-9ae1-1213715efc8c",
+          "toolId": "copilot_replaceString"
+        },
+        {
+          "value": "\n```\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "uris": {}
+        },
+        {
+          "id": "1db7e9e9-a330-4a56-85f2-f4f0845cf3d0",
+          "kind": "undoStop"
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "scheme": "file"
+          },
+          "isEdit": true
+        },
+        {
+          "kind": "textEditGroup",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "scheme": "file"
+          },
+          "edits": [
+            [
+              {
+                "text": "\"\"\"\nCPSC 5207EL Assignment 1 - Machine Learning Component\nLive Video Traffic Sign Detection using Fine-tuned YOLOv8\n\"\"\"\n\nimport cv2\nfrom ultralytics import YOLO\nimport numpy as np\n\n\ndef estimate_distance(pixel_size, real_size_cm=15.0, frame_width=640):\n    \"\"\"\n    Estimates distance to traffic sign without camera calibration.\n\n    Args:\n        pixel_size: Average width/height of the bounding box in pixels\n        real_size_cm: Real physical size of the traffic sign in cm (default: 15 cm)\n        frame_width: Frame width in pixels (default: 640)\n\n    Returns:\n        float: Estimated distance in centimeters\n\n    Note:\n        This uses an approximate focal length based on typical webcam FOV (~60-70 degrees).\n        For 640x480 resolution, focal length ≈ frame_width / (2 * tan(FOV/2))\n        Assuming 60° horizontal FOV: f ≈ 640 / (2 * tan(30°)) ≈ 554 pixels\n    \"\"\"\n    # Approximate focal length for typical webcam (in pixels)\n    # This assumes ~60 degree horizontal field of view\n    focal_length_px = frame_width / (2 * np.tan(np.radians(30)))\n\n    # Distance = (focal_length * real_size) / pixel_size\n    # Prevent division by zero\n    if pixel_size > 0:\n        distance_cm = (focal_length_px * real_size_cm) / pixel_size\n        return distance_cm\n    return None",
+                "range": {
+                  "startLineNumber": 1,
+                  "startColumn": 1,
+                  "endLineNumber": 8,
+                  "endColumn": 19
+                }
+              }
+            ],
+            []
+          ],
+          "done": true
+        },
+        {
+          "value": "\n```\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "uris": {}
+        },
+        {
+          "value": "\n\nNow let's integrate the distance estimation into the detection loop to calculate and display the distance for each detected traffic sign: ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "prepareToolInvocation",
+          "toolName": "copilot_replaceString"
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "presentation": "hidden",
+          "invocationMessage": "Using \"Replace String in File\"",
+          "isConfirmed": {
+            "type": 1
+          },
+          "isComplete": true,
+          "source": {
+            "type": "internal",
+            "label": "Built-In"
+          },
+          "toolCallId": "2d2aceed-37c2-4440-858a-c14b4a306209",
+          "toolId": "copilot_replaceString"
+        },
+        {
+          "value": "\n```\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "uris": {}
+        },
+        {
+          "id": "7c94d77b-74c1-4e3b-ad94-035fbae68324",
+          "kind": "undoStop"
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "scheme": "file"
+          },
+          "isEdit": true
+        },
+        {
+          "kind": "textEditGroup",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "scheme": "file"
+          },
+          "edits": [
+            [
+              {
+                "text": "        # Draw bounding boxes and labels\n        for box in boxes:\n            # Get box coordinates\n            x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()\n            x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)\n\n            # Get confidence and class\n            confidence = float(box.conf[0])\n            class_id = int(box.cls[0])\n            class_name = class_names[class_id]\n            \n            # Calculate bounding box size for distance estimation\n            box_width = x2 - x1\n            box_height = y2 - y1\n            avg_box_size = (box_width + box_height) / 2\n            \n            # Estimate distance to the traffic sign\n            distance_cm = estimate_distance(avg_box_size, real_size_cm=15.0, frame_width=640)\n\n            # Draw bounding box\n            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)\n\n            # Prepare label text with distance\n            if distance_cm:\n                label = f\"{class_name}: {confidence:.2f} | {distance_cm:.1f}cm\"\n            else:\n                label = f\"{class_name}: {confidence:.2f}\"",
+                "range": {
+                  "startLineNumber": 77,
+                  "startColumn": 1,
+                  "endLineNumber": 92,
+                  "endColumn": 54
+                }
+              }
+            ],
+            []
+          ],
+          "done": true
+        },
+        {
+          "value": "\n```\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "uris": {}
+        },
+        {
+          "value": "\n\nPerfect! I've successfully integrated the `estimate_distance` function into your YOLO ML script. Here's what was added:\n\n## Changes Made:\n\n1. **Added `estimate_distance` function** - Uses the same approach as in the CV file:\n   - Calculates focal length based on typical webcam FOV (~60 degrees)\n   - Estimates distance using the formula: `Distance = (focal_length × real_size) / pixel_size`\n   - Default real sign size is set to 15 cm (adjustable)\n\n2. **Integrated distance calculation** into the detection loop:\n   - Calculates average bounding box size (average of width and height)\n   - Estimates distance for each detected traffic sign\n   - Displays distance in the label alongside class name and confidence\n\n3. **Enhanced label display**:\n   - Now shows: `ClassName: confidence | distance_cm`\n   - Example: `STOP: 0.95 | 45.3cm`\n\nThe script will now display the estimated distance to each detected traffic sign in real-time! The distance estimation uses the same mathematical approach as your AprilTag CV code but adapted for YOLO bounding boxes.\n\nYou can adjust the `real_size_cm` parameter (currently 15 cm) to match the actual physical size of your traffic signs for more accurate distance estimates.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_7a7d3af2-06f2-498e-b0c0-efd27794e541",
+      "result": {
+        "timings": {
+          "firstProgress": 3238,
+          "totalElapsed": 32505
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"CPSC_5207EL_A1_GX_CV.PY\" filePath=\"/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_GX_CV.PY\">\n# Parts of the code below was generated with GitHub Copilot Agents using Claude Sonnet 4.5\n# Reference to the conversation: gx_cv_prompt.json\nimport cv2\nimport numpy as np\n\n\ndef estimate_distance(pixel_size, real_size_cm=7.5, frame_width=640):\n    \"\"\"\n    Estimates distance to AprilTag without camera calibration.\n\n    Args:\n        pixel_size: Average edge length of the tag in pixels\n        real_size_cm: Real physical size of the tag in cm (default: 7.5 cm)\n        frame_width: Frame width in pixels (default: 640)\n\n    Returns:\n        float: Estimated distance in centimeters\n\n    Note:\n        This uses an approximate focal length based on typical webcam FOV (~60-70 degrees).\n        For 640x480 resolution, focal length ≈ frame_width / (2 * tan(FOV/2))\n        Assuming 60° horizontal FOV: f ≈ 640 / (2 * tan(30°)) ≈ 554 pixels\n    \"\"\"\n    # Approximate focal length for typical webcam (in pixels)\n    # This assumes ~60 degree horizontal field of view\n    focal_length_px = frame_width / (2 * np.tan(np.radians(30)))\n\n    # Distance = (focal_length * real_size) / pixel_size\n    # Prevent division by zero\n    if pixel_size > 0:\n        distance_cm = (focal_length_px * real_size_cm) / pixel_size\n        return distance_cm\n    return None\n\n\ndef trackSign_CV(frame, detector, tag_to_action):\n    \"\"\"\n    Detects AprilTags (36h11 family) in the frame and returns navigation decisions.\n    Estimates distance to each detected tag.\n\n    Args:\n        frame: Input BGR frame from camera\n        detector: cv2.aruco.ArucoDetector configured for AprilTag 36h11\n        tag_to_action: Dictionary mapping tag IDs to navigation actions\n\n    Returns:\n        tuple: (annotated_frame, navigation_decision, detection_data)\n            - annotated_frame: Frame with drawn detection results\n            - navigation_decision: String with navigation command or None\n            - detection_data: List of dictionaries containing detection details\n    \"\"\"\n    # Convert to grayscale for detection\n    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n\n    # Detect AprilTags\n    corners, ids, rejected = detector.detectMarkers(gray)\n\n    navigation_decision = None\n    detection_data = []\n    annotated_frame = frame.copy()\n\n    if ids is not None and len(ids) > 0:\n        # Draw detected markers\n        cv2.aruco.drawDetectedMarkers(annotated_frame, corners, ids)\n\n        for i, tag_id in enumerate(ids.flatten()):\n            # Get corner points for this tag\n            corner_points = corners[i][0]\n\n            # Calculate center of the tag\n            center_x = int(np.mean(corner_points[:, 0]))\n            center_y = int(np.mean(corner_points[:, 1]))\n\n            # Calculate tag size (average edge length for stability check)\n            edge_lengths = []\n            for j in range(4):\n                p1 = corner_points[j]\n                p2 = corner_points[(j + 1) % 4]\n                length = np.linalg.norm(p2 - p1)\n                edge_lengths.append(length)\n            avg_edge_length = np.mean(edge_lengths)\n\n            # Estimate distance to the tag\n            distance_cm = estimate_distance(\n                avg_edge_length, real_size_cm=7.5, frame_width=640\n            )\n\n            # Store detection data\n            detection_info = {\n                \"id\": int(tag_id),\n                \"center\": (center_x, center_y),\n                \"corners\": corner_points,\n                \"edge_length\": avg_edge_length,\n                \"distance_cm\": distance_cm,\n            }\n            detection_data.append(detection_info)\n\n            # Get navigation decision for this tag\n            action = tag_to_action.get(int(tag_id), \"Unknown Tag\")\n\n            # Use the first detected tag for navigation (can be modified for priority logic)\n            if navigation_decision is None:\n                navigation_decision = action\n\n            # Draw center point\n            cv2.circle(annotated_frame, (center_x, center_y), 5, (0, 0, 255), -1)\n\n            # Display tag ID and action\n            text_y_offset = -30\n            cv2.putText(\n                annotated_frame,\n                f\"ID: {tag_id}\",\n                (center_x - 30, center_y + text_y_offset),\n                cv2.FONT_HERSHEY_SIMPLEX,\n                0.6,\n                (255, 0, 0),\n                2,\n            )\n\n            cv2.putText(\n                annotated_frame,\n                f\"Action: {action}\",\n                (center_x - 30, center_y + text_y_offset - 25),\n                cv2.FONT_HERSHEY_SIMPLEX,\n                0.5,\n                (0, 255, 0),\n                2,\n            )\n\n            # Display estimated distance\n            if distance_cm:\n                cv2.putText(\n                    annotated_frame,\n                    f\"Dist: {distance_cm:.1f} cm\",\n                    (center_x - 30, center_y + text_y_offset - 45),\n                    cv2.FONT_HERSHEY_SIMPLEX,\n                    0.5,\n                    (255, 0, 255),\n                    2,\n                )\n\n    # Display detection count and current navigation decision\n    info_text = f\"Tags detected: {len(ids) if ids is not None else 0}\"\n    cv2.putText(\n        annotated_frame,\n        info_text,\n        (10, 30),\n        cv2.FONT_HERSHEY_SIMPLEX,\n        0.7,\n        (0, 255, 0),\n        2,\n    )\n\n    if navigation_decision:\n        cv2.putText(\n            annotated_frame,\n            f\"Navigation: {navigation_decision}\",\n            (10, 60),\n            cv2.FONT_HERSHEY_SIMPLEX,\n            0.7,\n            (0, 255, 255),\n            2,\n        )\n\n    return annotated_frame, navigation_decision, detection_data\n\n\ndef main():\n    \"\"\"\n    Opens the camera and displays live feedback using OpenCV.\n    Detects AprilTags and provides navigation decisions.\n    Press 'q' to quit the camera feed.\n    \"\"\"\n    # Define tag ID to navigation action mapping\n    # Modify these IDs and actions based on your specific signs\n    tag_to_action = {\n        0: \"NO_ENTRY\",\n        1: \"DEAD_END\",\n        2: \"RIGHT\",\n        3: \"LEFT\",\n        4: \"FORWARD\",\n        5: \"STOP\",\n    }\n\n    # Initialize the camera (0 is usually the default camera)\n    cap = cv2.VideoCapture(0)\n\n    # Set frame size to 640x480\n    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)\n    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)\n\n    # Check if camera opened successfully\n    if not cap.isOpened():\n        print(\"Error: Could not open camera\")\n        return\n\n    # Initialize AprilTag detector (36h11 family)\n    aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_APRILTAG_36h11)\n    aruco_params = cv2.aruco.DetectorParameters()\n    detector = cv2.aruco.ArucoDetector(aruco_dict, aruco_params)\n\n    print(\"Camera opened successfully!\")\n    print(\"AprilTag 36h11 detector initialized!\")\n    print(\"Tag to Action Mapping:\")\n    for tag_id, action in tag_to_action.items():\n        print(f\"  ID {tag_id}: {action}\")\n    print(\"Press 'q' to quit\")\n\n    while True:\n        # Capture frame-by-frame\n        ret, frame = cap.read()\n\n        # If frame is read correctly, ret is True\n        if not ret:\n            print(\"Error: Can't receive frame. Exiting...\")\n            break\n\n        # Detect AprilTags and get navigation decision\n        annotated_frame, navigation_decision, detection_data = trackSign_CV(\n            frame, detector, tag_to_action\n        )\n\n        # Display the annotated frame\n        cv2.imshow(\"AprilTag Navigation System\", annotated_frame)\n\n        # Wait for 'q' key to quit\n        if cv2.waitKey(1) & 0xFF == ord(\"q\"):\n            break\n\n    # Release the camera and close windows\n    cap.release()\n    cv2.destroyAllWindows()\n    print(\"Camera closed successfully!\")\n\n\nif __name__ == \"__main__\":\n    main()\n</attachment>\n<attachment id=\"CPSC_5207EL_A1_Gx_ML.py\" filePath=\"/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py\">\n\"\"\"\nCPSC 5207EL Assignment 1 - Machine Learning Component\nLive Video Traffic Sign Detection using Fine-tuned YOLOv8\n\"\"\"\n\nimport cv2\nfrom ultralytics import YOLO\nimport numpy as np\n\n# Load the fine-tuned YOLO model\nMODEL_PATH = \"traffic_sign_detection/yolov8n_finetuned/weights/best.pt\"\nmodel = YOLO(MODEL_PATH)\n\n# Get class names from the model\nclass_names = model.names\n\n# Initialize video capture (0 for default webcam)\ncap = cv2.VideoCapture(0)\n\n# Set video properties for better performance\ncap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)\ncap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)\n\nprint(\"Starting live video detection...\")\nprint(\"Press 'q' to quit\")\nprint(f\"Loaded model from: {MODEL_PATH}\")\nprint(f\"Detected classes: {class_names}\")\n\n# FPS calculation variables\nfps_counter = 0\nfps_display = 0\n\nwhile True:\n    # Read frame from webcam\n    ret, frame = cap.read()\n\n    if not ret:\n        print(\"Failed to grab frame\")\n        break\n\n    # Perform inference\n    results = model(frame, conf=0.25, iou=0.45, verbose=False)\n\n    # Process results\n    for result in results:\n        boxes = result.boxes\n\n        # Draw bounding boxes and labels\n        for box in boxes:\n            # Get box coordinates\n            x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()\n            x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)\n\n            # Get confidence and class\n            confidence = float(box.conf[0])\n            class_id = int(box.cls[0])\n            class_name = class_names[class_id]\n\n            # Draw bounding box\n            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)\n\n            # Prepare label text\n            label = f\"{class_name}: {confidence:.2f}\"\n\n            # Get text size for background\n            (text_width, text_height), baseline = cv2.getTextSize(\n                label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2\n            )\n\n            # Draw background rectangle for text\n            cv2.rectangle(\n                frame,\n                (x1, y1 - text_height - baseline - 5),\n                (x1 + text_width, y1),\n                (0, 255, 0),\n                -1,\n            )\n\n            # Draw label text\n            cv2.putText(\n                frame, label, (x1, y1 - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 0), 2\n            )\n\n    # Display FPS\n    fps_counter += 1\n    if fps_counter % 10 == 0:\n        fps_display = fps_counter / 10\n        fps_counter = 0\n\n    cv2.putText(\n        frame,\n        f\"FPS: {fps_display:.1f}\",\n        (10, 30),\n        cv2.FONT_HERSHEY_SIMPLEX,\n        0.7,\n        (255, 255, 255),\n        2,\n    )\n\n    # Display the frame\n    cv2.imshow(\"Traffic Sign Detection - Live Video\", frame)\n\n    # Break loop on 'q' key press\n    if cv2.waitKey(1) & 0xFF == ord(\"q\"):\n        break\n\n# Release resources\ncap.release()\ncv2.destroyAllWindows()\nprint(\"Video capture stopped.\")\n</attachment>\n\n</attachments>\n<context>\nThe current date is October 2, 2025.\nThe user has taken some actions between the last request and now:\n- Made manual edits to /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py\nSo be sure to check the current file contents before making any new edits.\nTerminals:\nTerminal: zsh\nLast Command: python3 fine_tune_yolo.py\nCwd: /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1\nExit Code: 0\nTerminal: zsh\nTerminal: zsh\nLast Command: python3 CPSC_5207EL_A1_Gx_ML.py\nCwd: /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1\nExit Code: 0\n<todoList>\nNo todo list found.\n</todoList>\n\n</context>\n<editorContext>\nThe user's current file is /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py. \n</editorContext>\n<reminderInstructions>\nWhen using the replace_string_in_file tool, include 3-5 lines of unchanged code before and after the string you want to replace, to make it unambiguous which part of the file should be edited.\n\n</reminderInstructions>\n<userRequest>\nImplement the function estimate_distance into CPSC_5207EL_A1_Gx_ML.py\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "I'll add the `estimate_distance` function to the YOLO ML script. This function will estimate the distance to detected traffic signs based on their pixel size, similar to how it works in the CV file. ",
+              "toolCalls": [
+                {
+                  "name": "replace_string_in_file",
+                  "arguments": "{\"filePath\": \"/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py\", \"oldString\": \"\\\"\\\"\\\"\\nCPSC 5207EL Assignment 1 - Machine Learning Component\\nLive Video Traffic Sign Detection using Fine-tuned YOLOv8\\n\\\"\\\"\\\"\\n\\nimport cv2\\nfrom ultralytics import YOLO\\nimport numpy as np\", \"newString\": \"\\\"\\\"\\\"\\nCPSC 5207EL Assignment 1 - Machine Learning Component\\nLive Video Traffic Sign Detection using Fine-tuned YOLOv8\\n\\\"\\\"\\\"\\n\\nimport cv2\\nfrom ultralytics import YOLO\\nimport numpy as np\\n\\n\\ndef estimate_distance(pixel_size, real_size_cm=15.0, frame_width=640):\\n    \\\"\\\"\\\"\\n    Estimates distance to traffic sign without camera calibration.\\n\\n    Args:\\n        pixel_size: Average width/height of the bounding box in pixels\\n        real_size_cm: Real physical size of the traffic sign in cm (default: 15 cm)\\n        frame_width: Frame width in pixels (default: 640)\\n\\n    Returns:\\n        float: Estimated distance in centimeters\\n\\n    Note:\\n        This uses an approximate focal length based on typical webcam FOV (~60-70 degrees).\\n        For 640x480 resolution, focal length ≈ frame_width / (2 * tan(FOV/2))\\n        Assuming 60° horizontal FOV: f ≈ 640 / (2 * tan(30°)) ≈ 554 pixels\\n    \\\"\\\"\\\"\\n    # Approximate focal length for typical webcam (in pixels)\\n    # This assumes ~60 degree horizontal field of view\\n    focal_length_px = frame_width / (2 * np.tan(np.radians(30)))\\n\\n    # Distance = (focal_length * real_size) / pixel_size\\n    # Prevent division by zero\\n    if pixel_size > 0:\\n        distance_cm = (focal_length_px * real_size_cm) / pixel_size\\n        return distance_cm\\n    return None\"}",
+                  "id": "tooluse_zMEUDswSSuCSyr2xjeNguQ__vscode-1759350995165"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "b2486fd8-158b-47fc-9436-dbb131a9b42a"
+            },
+            {
+              "response": "\n\nNow let's integrate the distance estimation into the detection loop to calculate and display the distance for each detected traffic sign: ",
+              "toolCalls": [
+                {
+                  "name": "replace_string_in_file",
+                  "arguments": "{\"oldString\": \"        # Draw bounding boxes and labels\\n        for box in boxes:\\n            # Get box coordinates\\n            x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()\\n            x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)\\n\\n            # Get confidence and class\\n            confidence = float(box.conf[0])\\n            class_id = int(box.cls[0])\\n            class_name = class_names[class_id]\\n\\n            # Draw bounding box\\n            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)\\n\\n            # Prepare label text\\n            label = f\\\"{class_name}: {confidence:.2f}\\\"\", \"filePath\": \"/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py\", \"newString\": \"        # Draw bounding boxes and labels\\n        for box in boxes:\\n            # Get box coordinates\\n            x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()\\n            x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)\\n\\n            # Get confidence and class\\n            confidence = float(box.conf[0])\\n            class_id = int(box.cls[0])\\n            class_name = class_names[class_id]\\n            \\n            # Calculate bounding box size for distance estimation\\n            box_width = x2 - x1\\n            box_height = y2 - y1\\n            avg_box_size = (box_width + box_height) / 2\\n            \\n            # Estimate distance to the traffic sign\\n            distance_cm = estimate_distance(avg_box_size, real_size_cm=15.0, frame_width=640)\\n\\n            # Draw bounding box\\n            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)\\n\\n            # Prepare label text with distance\\n            if distance_cm:\\n                label = f\\\"{class_name}: {confidence:.2f} | {distance_cm:.1f}cm\\\"\\n            else:\\n                label = f\\\"{class_name}: {confidence:.2f}\\\"\"}",
+                  "id": "tooluse_0eu9EI9NRPaCQ8QfLUY8ZA__vscode-1759350995166"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "ec444b35-4c32-46d9-8db5-9dc3077152b7"
+            },
+            {
+              "response": "\n\nPerfect! I've successfully integrated the `estimate_distance` function into your YOLO ML script. Here's what was added:\n\n## Changes Made:\n\n1. **Added `estimate_distance` function** - Uses the same approach as in the CV file:\n   - Calculates focal length based on typical webcam FOV (~60 degrees)\n   - Estimates distance using the formula: `Distance = (focal_length × real_size) / pixel_size`\n   - Default real sign size is set to 15 cm (adjustable)\n\n2. **Integrated distance calculation** into the detection loop:\n   - Calculates average bounding box size (average of width and height)\n   - Estimates distance for each detected traffic sign\n   - Displays distance in the label alongside class name and confidence\n\n3. **Enhanced label display**:\n   - Now shows: `ClassName: confidence | distance_cm`\n   - Example: `STOP: 0.95 | 45.3cm`\n\nThe script will now display the estimated distance to each detected traffic sign in real-time! The distance estimation uses the same mathematical approach as your AprilTag CV code but adapted for YOLO bounding boxes.\n\nYou can adjust the `real_size_cm` parameter (currently 15 cm) to match the actual physical size of your traffic signs for more accurate distance estimates.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "b35f456f-2006-445f-8c2e-0540508672ff"
+            }
+          ],
+          "toolCallResults": {
+            "tooluse_zMEUDswSSuCSyr2xjeNguQ__vscode-1759350995165": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 23,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "qy",
+                      "children": [
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "The following files were successfully edited:",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            },
+            "tooluse_0eu9EI9NRPaCQ8QfLUY8ZA__vscode-1759350995166": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 23,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "qy",
+                      "children": [
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "The following files were successfully edited:",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "modelMessageId": "b7a94207-56af-47e9-8656-ad0baa504d73",
+          "responseId": "e55d67e5-7add-42bf-98e3-1952c2c4fe06",
+          "sessionId": "58afe44b-cc6f-452f-9b6b-288460980b72",
+          "agentId": "github.copilot.editsAgent"
+        },
+        "details": "Claude Sonnet 4.5 (Preview) • 1x"
+      },
+      "responseMarkdownInfo": [],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.31.3",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1759412904033,
+      "editedFileEvents": [
+        {
+          "eventKind": 3,
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/%20CPSC_5207EL_A1_Gx_ML.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/ CPSC_5207EL_A1_Gx_ML.py",
+            "scheme": "file"
+          }
+        }
+      ],
+      "modelId": "copilot/claude-sonnet-4.5"
+    },
+    {
+      "requestId": "request_81511739-a6fa-4a6a-87cc-c39ac39cb28f",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 34
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 35
+            },
+            "text": "Is this code making augmentations?",
+            "kind": "text"
+          }
+        ],
+        "text": "Is this code making augmentations?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+              "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+              "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+              "scheme": "file"
+            },
+            "id": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "name": "CPSC_5207EL_A1_Gx_ML.py"
+          },
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:CPSC_5207EL_A1_Gx_ML.py",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+              "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+              "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+              "scheme": "file"
+            },
+            "modelDescription": "User's active file"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "No, this code is **not** making augmentations. \n\nThis is a **live inference/detection script** that:\n- Loads a pre-trained YOLO model\n- Captures live video from webcam\n- Runs inference on each frame\n- Displays detection results with bounding boxes and labels\n\n**Augmentations** are typically done during the **training phase**, not during inference. They include transformations like:\n- Random rotations\n- Flips (horizontal/vertical)\n- Color adjustments\n- Scaling/cropping\n- Brightness/contrast changes\n- Noise addition\n\nIf you trained your YOLOv8 model, augmentations would have been applied during training (either through Ultralytics' default augmentations or custom ones specified in your training config).\n\nTo check what augmentations were used during training, you would look at:\n1. Your training script/configuration file\n2. The `data.yaml` or training hyperparameters file\n3. Ultralytics' default augmentation settings\n\nWould you like me to show you how augmentations would be configured during the training phase?",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_7c2f5ff5-89c1-4a78-971c-5e745b295a72",
+      "result": {
+        "timings": {
+          "firstProgress": 1897,
+          "totalElapsed": 7204
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "No, this code is **not** making augmentations. \n\nThis is a **live inference/detection script** that:\n- Loads a pre-trained YOLO model\n- Captures live video from webcam\n- Runs inference on each frame\n- Displays detection results with bounding boxes and labels\n\n**Augmentations** are typically done during the **training phase**, not during inference. They include transformations like:\n- Random rotations\n- Flips (horizontal/vertical)\n- Color adjustments\n- Scaling/cropping\n- Brightness/contrast changes\n- Noise addition\n\nIf you trained your YOLOv8 model, augmentations would have been applied during training (either through Ultralytics' default augmentations or custom ones specified in your training config).\n\nTo check what augmentations were used during training, you would look at:\n1. Your training script/configuration file\n2. The `data.yaml` or training hyperparameters file\n3. Ultralytics' default augmentation settings\n\nWould you like me to show you how augmentations would be configured during the training phase?",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "3f725137-96de-4d52-9d1f-cac5bf9fcc0d"
+            }
+          ],
+          "modelMessageId": "ff7691bb-0cca-4bd4-ad69-5ea1755076be",
+          "responseId": "ccd3bb09-8ecd-429b-8a9f-874949aa0b48",
+          "sessionId": "16a5a288-abf9-409e-81a2-74b45c00ce71",
+          "agentId": "github.copilot.default"
+        },
+        "details": "Claude Sonnet 4.5 (Preview) • 1x"
+      },
+      "responseMarkdownInfo": [],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.31.3",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask or edit in context",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "walter-amador",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/67434175",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1759433635540,
+      "editedFileEvents": [
+        {
+          "eventKind": 3,
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/CPSC_5207EL_A1_Gx_ML.py",
+            "scheme": "file"
+          }
+        }
+      ],
+      "modelId": "copilot/claude-sonnet-4.5"
+    },
+    {
+      "requestId": "request_d01a642b-4710-4e06-a688-b2d29f3ee7cc",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 34
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 35
+            },
+            "text": "Is this code making augmentations?",
+            "kind": "text"
+          }
+        ],
+        "text": "Is this code making augmentations?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:fine_tune_yolo.py",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+              "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+              "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+              "scheme": "file"
+            },
+            "modelDescription": "User's active file"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Yes, **this code IS making augmentations** during training! \n\nLooking at your ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": " file, YOLOv8 applies **default augmentations automatically** during training. The augmentations are controlled by parameters in the ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "model.train()",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 81,
+                "startColumn": 5,
+                "endLineNumber": 81,
+                "endColumn": 5
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "71f9f202-a3d9-4392-be40-abd085cf03d7"
+        },
+        {
+          "value": " call.\n\n## Current Augmentation Settings in Your Code:\n\n```python\nmodel.train(\n    # ... other params ...\n    rect=False,              # ✅ Random rectangular training (disabled)\n    close_mosaic=10,         # ✅ Mosaic augmentation disabled last 10 epochs\n    lr0=0.01,                # Learning rate settings\n    momentum=0.937,\n    warmup_epochs=3.0,\n    # ... augmentation parameters below ...\n)\n```\n\n## YOLOv8 Default Augmentations (Applied Automatically):\n\nEven though you don't see them explicitly listed, YOLOv8 applies these augmentations by default:\n\n1. **Mosaic Augmentation** - Combines 4 images into one (disabled in last 10 epochs via ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "close_mosaic=10",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 126,
+                "startColumn": 13,
+                "endLineNumber": 126,
+                "endColumn": 13
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "3bceac93-9a1a-4bec-872a-e9d0f7b2ee0c"
+        },
+        {
+          "value": ")\n2. **Random Scaling** - Scales images randomly\n3. **Random Cropping** - Crops portions of images\n4. **Horizontal Flip** - Flips images horizontally (50% probability)\n5. **HSV Augmentation** - Adjusts Hue, Saturation, Value\n6. **Translation** - Shifts images randomly\n7. **Rotation** - Small random rotations\n8. **Shear** - Applies shear transformations\n\n## To Add/Modify Augmentations:\n\nYou can explicitly control augmentations by adding these parameters to your ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "model.train()",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 81,
+                "startColumn": 5,
+                "endLineNumber": 81,
+                "endColumn": 5
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "213d1982-5c59-4e94-90d1-6cda6fa53b59"
+        },
+        {
+          "value": " call:\n\n````python\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "# ...existing code...\n\nresults = model.train(\n    data=config[\"data_yaml\"],\n    epochs=config[\"epochs\"],\n    # ...existing parameters...\n    \n    # Augmentation parameters (add these):\n    hsv_h=0.015,           # HSV-Hue augmentation (fraction)\n    hsv_s=0.7,             # HSV-Saturation augmentation (fraction)\n    hsv_v=0.4,             # HSV-Value augmentation (fraction)\n    degrees=0.0,           # Image rotation (+/- deg)\n    translate=0.1,         # Image translation (+/- fraction)\n    scale=0.5,             # Image scale (+/- gain)\n    shear=0.0,             # Image shear (+/- deg)\n    perspective=0.0,       # Image perspective (+/- fraction), range 0-0.001\n    flipud=0.0,            # Image flip up-down (probability)\n    fliplr=0.5,            # Image flip left-right (probability)\n    mosaic=1.0,            # Mosaic augmentation (probability)\n    mixup=0.0,             # Mixup augmentation (probability)\n    copy_paste=0.0,        # Copy-paste augmentation (probability)\n    \n    # ...existing code...\n)\n````\n\n**So yes, your training code IS using augmentations** - YOLOv8's built-in ones are applied automatically! 🎨✨",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_d0cd2620-5493-4b2a-9033-918d91b397b7",
+      "result": {
+        "timings": {
+          "firstProgress": 2129,
+          "totalElapsed": 13778
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "model.train(\n    # ... other params ...\n    rect=False,              # ✅ Random rectangular training (disabled)\n    close_mosaic=10,         # ✅ Mosaic augmentation disabled last 10 epochs\n    lr0=0.01,                # Learning rate settings\n    momentum=0.937,\n    warmup_epochs=3.0,\n    # ... augmentation parameters below ...\n)\n",
+              "language": "python",
+              "markdownBeforeBlock": "Yes, **this code IS making augmentations** during training! \n\nLooking at your  file, YOLOv8 applies **default augmentations automatically** during training. The augmentations are controlled by parameters in the  call.\n\n## Current Augmentation Settings in Your Code:\n\n"
+            },
+            {
+              "code": "# ...existing code...\n\nresults = model.train(\n    data=config[\"data_yaml\"],\n    epochs=config[\"epochs\"],\n    # ...existing parameters...\n    \n    # Augmentation parameters (add these):\n    hsv_h=0.015,           # HSV-Hue augmentation (fraction)\n    hsv_s=0.7,             # HSV-Saturation augmentation (fraction)\n    hsv_v=0.4,             # HSV-Value augmentation (fraction)\n    degrees=0.0,           # Image rotation (+/- deg)\n    translate=0.1,         # Image translation (+/- fraction)\n    scale=0.5,             # Image scale (+/- gain)\n    shear=0.0,             # Image shear (+/- deg)\n    perspective=0.0,       # Image perspective (+/- fraction), range 0-0.001\n    flipud=0.0,            # Image flip up-down (probability)\n    fliplr=0.5,            # Image flip left-right (probability)\n    mosaic=1.0,            # Mosaic augmentation (probability)\n    mixup=0.0,             # Mixup augmentation (probability)\n    copy_paste=0.0,        # Copy-paste augmentation (probability)\n    \n    # ...existing code...\n)\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "scheme": "file"
+              },
+              "language": "python",
+              "markdownBeforeBlock": "\n## YOLOv8 Default Augmentations (Applied Automatically):\n\nEven though you don't see them explicitly listed, YOLOv8 applies these augmentations by default:\n\n1. **Mosaic Augmentation** - Combines 4 images into one (disabled in last 10 epochs via )\n2. **Random Scaling** - Scales images randomly\n3. **Random Cropping** - Crops portions of images\n4. **Horizontal Flip** - Flips images horizontally (50% probability)\n5. **HSV Augmentation** - Adjusts Hue, Saturation, Value\n6. **Translation** - Shifts images randomly\n7. **Rotation** - Small random rotations\n8. **Shear** - Applies shear transformations\n\n## To Add/Modify Augmentations:\n\nYou can explicitly control augmentations by adding these parameters to your  call:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "Yes, **this code IS making augmentations** during training! \n\nLooking at your `fine_tune_yolo.py` file, YOLOv8 applies **default augmentations automatically** during training. The augmentations are controlled by parameters in the `model.train()` call.\n\n## Current Augmentation Settings in Your Code:\n\n```python\nmodel.train(\n    # ... other params ...\n    rect=False,              # ✅ Random rectangular training (disabled)\n    close_mosaic=10,         # ✅ Mosaic augmentation disabled last 10 epochs\n    lr0=0.01,                # Learning rate settings\n    momentum=0.937,\n    warmup_epochs=3.0,\n    # ... augmentation parameters below ...\n)\n```\n\n## YOLOv8 Default Augmentations (Applied Automatically):\n\nEven though you don't see them explicitly listed, YOLOv8 applies these augmentations by default:\n\n1. **Mosaic Augmentation** - Combines 4 images into one (disabled in last 10 epochs via `close_mosaic=10`)\n2. **Random Scaling** - Scales images randomly\n3. **Random Cropping** - Crops portions of images\n4. **Horizontal Flip** - Flips images horizontally (50% probability)\n5. **HSV Augmentation** - Adjusts Hue, Saturation, Value\n6. **Translation** - Shifts images randomly\n7. **Rotation** - Small random rotations\n8. **Shear** - Applies shear transformations\n\n## To Add/Modify Augmentations:\n\nYou can explicitly control augmentations by adding these parameters to your `model.train()` call:\n\n````python\n# filepath: /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py\n# ...existing code...\n\nresults = model.train(\n    data=config[\"data_yaml\"],\n    epochs=config[\"epochs\"],\n    # ...existing parameters...\n    \n    # Augmentation parameters (add these):\n    hsv_h=0.015,           # HSV-Hue augmentation (fraction)\n    hsv_s=0.7,             # HSV-Saturation augmentation (fraction)\n    hsv_v=0.4,             # HSV-Value augmentation (fraction)\n    degrees=0.0,           # Image rotation (+/- deg)\n    translate=0.1,         # Image translation (+/- fraction)\n    scale=0.5,             # Image scale (+/- gain)\n    shear=0.0,             # Image shear (+/- deg)\n    perspective=0.0,       # Image perspective (+/- fraction), range 0-0.001\n    flipud=0.0,            # Image flip up-down (probability)\n    fliplr=0.5,            # Image flip left-right (probability)\n    mosaic=1.0,            # Mosaic augmentation (probability)\n    mixup=0.0,             # Mixup augmentation (probability)\n    copy_paste=0.0,        # Copy-paste augmentation (probability)\n    \n    # ...existing code...\n)\n````\n\n**So yes, your training code IS using augmentations** - YOLOv8's built-in ones are applied automatically! 🎨✨",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "6ff5f009-ecf0-4f15-be35-f23b026675b2"
+            }
+          ],
+          "modelMessageId": "c6f33e85-9385-4a0b-8a6c-b99b7d8ecc49",
+          "responseId": "c4bafafa-a9db-439c-8e2d-66794c685243",
+          "sessionId": "16a5a288-abf9-409e-81a2-74b45c00ce71",
+          "agentId": "github.copilot.default"
+        },
+        "details": "Claude Sonnet 4.5 (Preview) • 1x"
+      },
+      "responseMarkdownInfo": [
+        {
+          "suggestionId": "sgt-e003595b-4d1c-4a85-b858-d493d9afacd2"
+        },
+        {
+          "suggestionId": "sgt-8d66987a-f1a7-4ef5-bd85-ca84190ef09a"
+        }
+      ],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.31.3",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask or edit in context",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "walter-amador",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/67434175",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1759433656625,
+      "modelId": "copilot/claude-sonnet-4.5"
+    },
+    {
+      "requestId": "request_88356086-2bbf-4ec6-8d54-e7060f560dff",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 55
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 56
+            },
+            "text": "Keep only the mosaic augmentation, the rest remove them",
+            "kind": "text"
+          }
+        ],
+        "text": "Keep only the mosaic augmentation, the rest remove them"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:fine_tune_yolo.py",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+              "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+              "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+              "scheme": "file"
+            },
+            "modelDescription": "User's active file"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "I'll modify your training code to keep only mosaic augmentation and disable all other augmentations:\n\n````python\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\n\n    try:\n        results = model.train(\n            data=config[\"data_yaml\"],\n            epochs=config[\"epochs\"],\n            imgsz=config[\"imgsz\"],\n            batch=config[\"batch\"],\n            patience=config[\"patience\"],\n            save=True,\n            save_period=config[\"save_period\"],\n            device=config[\"device\"],\n            workers=config[\"workers\"],\n            project=config[\"project\"],\n            name=config[\"name\"],\n            exist_ok=True,\n            pretrained=True,\n            optimizer=\"auto\",\n            verbose=True,\n            seed=42,\n            deterministic=True,\n            single_cls=False,\n            rect=False,\n            cos_lr=False,\n            close_mosaic=10,  # Keep mosaic until last 10 epochs\n            resume=False,\n            amp=True,\n            fraction=1.0,\n            profile=False,\n            freeze=None,\n            lr0=0.01,\n            lrf=0.01,\n            momentum=0.937,\n            weight_decay=0.0005,\n            warmup_epochs=3.0,\n            warmup_momentum=0.8,\n            warmup_bias_lr=0.1,\n            box=7.5,\n            cls=0.5,\n            dfl=1.5,\n            pose=12.0,\n            kobj=1.0,\n            label_smoothing=0.0,\n            nbs=64,\n            overlap_mask=True,\n            mask_ratio=4,\n            dropout=0.0,\n            val=True,\n            plots=True,\n            # Disable all augmentations except mosaic\n            mosaic=1.0,              # ✅ Keep mosaic augmentation (probability = 1.0)\n            mixup=0.0,               # ❌ Disable mixup\n            copy_paste=0.0,          # ❌ Disable copy-paste\n            degrees=0.0,             # ❌ Disable rotation\n            translate=0.0,           # ❌ Disable translation\n            scale=0.0,               # ❌ Disable scaling\n            shear=0.0,               # ❌ Disable shear\n            perspective=0.0,         # ❌ Disable perspective\n            flipud=0.0,              # ❌ Disable vertical flip\n            fliplr=0.0,              # ❌ Disable horizontal flip\n            hsv_h=0.0,               # ❌ Disable HSV-Hue augmentation\n            hsv_s=0.0,               # ❌ Disable HSV-Saturation augmentation\n            hsv_v=0.0,               # ❌ Disable HSV-Value augmentation\n        )\n\n// ...existing code...\n````\n\n## Changes Made:\n\n✅ **Kept:**\n- `mosaic=1.0` - Mosaic augmentation enabled (combines 4 images)\n- ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "close_mosaic=10",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 126,
+                "startColumn": 13,
+                "endLineNumber": 126,
+                "endColumn": 13
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "19176a18-b183-4e1d-8d4e-cd698ba551ae"
+        },
+        {
+          "value": " - Disables mosaic in the last 10 epochs\n\n❌ **Disabled all other augmentations:**\n- `mixup=0.0` - No image mixing\n- `copy_paste=0.0` - No copy-paste augmentation\n- `degrees=0.0` - No rotation\n- `translate=0.0` - No translation/shifting\n- `scale=0.0` - No scaling\n- `shear=0.0` - No shear transformation\n- `perspective=0.0` - No perspective transformation\n- `flipud=0.0` - No vertical flipping\n- `fliplr=0.0` - No horizontal flipping\n- `hsv_h=0.0` - No hue adjustment\n- `hsv_s=0.0` - No saturation adjustment\n- `hsv_v=0.0` - No value/brightness adjustment\n\nNow your model will train with **only mosaic augmentation** until the last 10 epochs! 🎯",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_609b66b0-1922-4b76-8a7c-c07a6b989c7a",
+      "result": {
+        "timings": {
+          "firstProgress": 2430,
+          "totalElapsed": 11649
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "// ...existing code...\n\n    try:\n        results = model.train(\n            data=config[\"data_yaml\"],\n            epochs=config[\"epochs\"],\n            imgsz=config[\"imgsz\"],\n            batch=config[\"batch\"],\n            patience=config[\"patience\"],\n            save=True,\n            save_period=config[\"save_period\"],\n            device=config[\"device\"],\n            workers=config[\"workers\"],\n            project=config[\"project\"],\n            name=config[\"name\"],\n            exist_ok=True,\n            pretrained=True,\n            optimizer=\"auto\",\n            verbose=True,\n            seed=42,\n            deterministic=True,\n            single_cls=False,\n            rect=False,\n            cos_lr=False,\n            close_mosaic=10,  # Keep mosaic until last 10 epochs\n            resume=False,\n            amp=True,\n            fraction=1.0,\n            profile=False,\n            freeze=None,\n            lr0=0.01,\n            lrf=0.01,\n            momentum=0.937,\n            weight_decay=0.0005,\n            warmup_epochs=3.0,\n            warmup_momentum=0.8,\n            warmup_bias_lr=0.1,\n            box=7.5,\n            cls=0.5,\n            dfl=1.5,\n            pose=12.0,\n            kobj=1.0,\n            label_smoothing=0.0,\n            nbs=64,\n            overlap_mask=True,\n            mask_ratio=4,\n            dropout=0.0,\n            val=True,\n            plots=True,\n            # Disable all augmentations except mosaic\n            mosaic=1.0,              # ✅ Keep mosaic augmentation (probability = 1.0)\n            mixup=0.0,               # ❌ Disable mixup\n            copy_paste=0.0,          # ❌ Disable copy-paste\n            degrees=0.0,             # ❌ Disable rotation\n            translate=0.0,           # ❌ Disable translation\n            scale=0.0,               # ❌ Disable scaling\n            shear=0.0,               # ❌ Disable shear\n            perspective=0.0,         # ❌ Disable perspective\n            flipud=0.0,              # ❌ Disable vertical flip\n            fliplr=0.0,              # ❌ Disable horizontal flip\n            hsv_h=0.0,               # ❌ Disable HSV-Hue augmentation\n            hsv_s=0.0,               # ❌ Disable HSV-Saturation augmentation\n            hsv_v=0.0,               # ❌ Disable HSV-Value augmentation\n        )\n\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+                "scheme": "file"
+              },
+              "language": "python",
+              "markdownBeforeBlock": "I'll modify your training code to keep only mosaic augmentation and disable all other augmentations:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "I'll modify your training code to keep only mosaic augmentation and disable all other augmentations:\n\n````python\n# filepath: /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py\n// ...existing code...\n\n    try:\n        results = model.train(\n            data=config[\"data_yaml\"],\n            epochs=config[\"epochs\"],\n            imgsz=config[\"imgsz\"],\n            batch=config[\"batch\"],\n            patience=config[\"patience\"],\n            save=True,\n            save_period=config[\"save_period\"],\n            device=config[\"device\"],\n            workers=config[\"workers\"],\n            project=config[\"project\"],\n            name=config[\"name\"],\n            exist_ok=True,\n            pretrained=True,\n            optimizer=\"auto\",\n            verbose=True,\n            seed=42,\n            deterministic=True,\n            single_cls=False,\n            rect=False,\n            cos_lr=False,\n            close_mosaic=10,  # Keep mosaic until last 10 epochs\n            resume=False,\n            amp=True,\n            fraction=1.0,\n            profile=False,\n            freeze=None,\n            lr0=0.01,\n            lrf=0.01,\n            momentum=0.937,\n            weight_decay=0.0005,\n            warmup_epochs=3.0,\n            warmup_momentum=0.8,\n            warmup_bias_lr=0.1,\n            box=7.5,\n            cls=0.5,\n            dfl=1.5,\n            pose=12.0,\n            kobj=1.0,\n            label_smoothing=0.0,\n            nbs=64,\n            overlap_mask=True,\n            mask_ratio=4,\n            dropout=0.0,\n            val=True,\n            plots=True,\n            # Disable all augmentations except mosaic\n            mosaic=1.0,              # ✅ Keep mosaic augmentation (probability = 1.0)\n            mixup=0.0,               # ❌ Disable mixup\n            copy_paste=0.0,          # ❌ Disable copy-paste\n            degrees=0.0,             # ❌ Disable rotation\n            translate=0.0,           # ❌ Disable translation\n            scale=0.0,               # ❌ Disable scaling\n            shear=0.0,               # ❌ Disable shear\n            perspective=0.0,         # ❌ Disable perspective\n            flipud=0.0,              # ❌ Disable vertical flip\n            fliplr=0.0,              # ❌ Disable horizontal flip\n            hsv_h=0.0,               # ❌ Disable HSV-Hue augmentation\n            hsv_s=0.0,               # ❌ Disable HSV-Saturation augmentation\n            hsv_v=0.0,               # ❌ Disable HSV-Value augmentation\n        )\n\n// ...existing code...\n````\n\n## Changes Made:\n\n✅ **Kept:**\n- `mosaic=1.0` - Mosaic augmentation enabled (combines 4 images)\n- `close_mosaic=10` - Disables mosaic in the last 10 epochs\n\n❌ **Disabled all other augmentations:**\n- `mixup=0.0` - No image mixing\n- `copy_paste=0.0` - No copy-paste augmentation\n- `degrees=0.0` - No rotation\n- `translate=0.0` - No translation/shifting\n- `scale=0.0` - No scaling\n- `shear=0.0` - No shear transformation\n- `perspective=0.0` - No perspective transformation\n- `flipud=0.0` - No vertical flipping\n- `fliplr=0.0` - No horizontal flipping\n- `hsv_h=0.0` - No hue adjustment\n- `hsv_s=0.0` - No saturation adjustment\n- `hsv_v=0.0` - No value/brightness adjustment\n\nNow your model will train with **only mosaic augmentation** until the last 10 epochs! 🎯",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "94c1eded-4fac-43c7-9842-c7f6d021e69b"
+            }
+          ],
+          "modelMessageId": "74d2f788-a2c2-4fb5-bc90-af0db5d12f50",
+          "responseId": "d4ac462a-29a2-4cee-90a5-fcee1b6f9868",
+          "sessionId": "16a5a288-abf9-409e-81a2-74b45c00ce71",
+          "agentId": "github.copilot.default"
+        },
+        "details": "Claude Sonnet 4.5 (Preview) • 1x"
+      },
+      "responseMarkdownInfo": [
+        {
+          "suggestionId": "sgt-2eea97a4-4ca0-43ce-9c2e-07021bdceb0f"
+        }
+      ],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.31.3",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask or edit in context",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "walter-amador",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/67434175",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1759433755169,
+      "modelId": "copilot/claude-sonnet-4.5"
+    },
+    {
+      "requestId": "request_4c8528d2-33ab-4869-928d-94f125a4cc2b",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 94
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 95
+            },
+            "text": "Will it apply the mosaic to all of the images? Does this makes it reduce the amount of images?",
+            "kind": "text"
+          }
+        ],
+        "text": "Will it apply the mosaic to all of the images? Does this makes it reduce the amount of images?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+              "external": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+              "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+              "scheme": "file"
+            },
+            "id": "file:///Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py",
+            "name": "fine_tune_yolo.py"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Great questions! Let me clarify how mosaic augmentation works:\n\n## 🎯 How Mosaic Augmentation Works:\n\n**No, it does NOT reduce the number of images.** Instead, it creates **new synthetic training samples** during training.\n\n### What Mosaic Does:\n\n1. **Combines 4 random images** into one composite image during each training iteration\n2. **Creates NEW training samples** on-the-fly (data augmentation happens in real-time)\n3. **Your original images remain unchanged** - they're just used to create new combinations\n\n### Example:\n- You have 100 training images\n- During training, YOLO randomly picks 4 images (e.g., images #5, #23, #67, #89)\n- It creates a mosaic by placing them in 4 quadrants\n- This creates a NEW synthetic training image\n- Next batch: picks different 4 images, creates a different mosaic\n- And so on...\n\n### Key Points:\n\n✅ **Does NOT reduce images** - You still train on all your data  \n✅ **Increases diversity** - Creates infinite combinations of your images  \n✅ **Applied randomly during training** - Not pre-generated  \n✅ **Your dataset stays intact** - Original images are never modified  \n✅ **With `mosaic=1.0`** - 100% of training batches use mosaic (until last 10 epochs due to `close_mosaic=10`)\n\n### Visual Example:\n```\nOriginal Dataset: [img1] [img2] [img3] [img4] [img5] ...\n\nDuring Training Batch 1:\n┌─────────┬─────────┐\n│  img2   │  img5   │  ← Mosaic #1\n├─────────┼─────────┤\n│  img1   │  img8   │\n└─────────┴─────────┘\n\nDuring Training Batch 2:\n┌─────────┬─────────┐\n│  img3   │  img7   │  ← Mosaic #2 (different combination)\n├─────────┼─────────┤\n│  img4   │  img9   │\n└─────────┴─────────┘\n```\n\n### Benefits for Traffic Sign Detection:\n- 🎯 Helps model learn to detect **multiple signs in one frame**\n- 📏 Exposes model to **different scales** of signs\n- 🔄 Creates **more training variety** without needing more real images\n- 🎨 Improves **generalization** to real-world scenarios\n\nSo with `mosaic=1.0`, your model will use mosaic augmentation on all training batches, effectively seeing many more training combinations than just your original dataset! 🚀",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_ca5cd9f2-f39f-4b2a-a203-123aea2e10a8",
+      "result": {
+        "timings": {
+          "firstProgress": 3466,
+          "totalElapsed": 16683
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "Original Dataset: [img1] [img2] [img3] [img4] [img5] ...\n\nDuring Training Batch 1:\n┌─────────┬─────────┐\n│  img2   │  img5   │  ← Mosaic #1\n├─────────┼─────────┤\n│  img1   │  img8   │\n└─────────┴─────────┘\n\nDuring Training Batch 2:\n┌─────────┬─────────┐\n│  img3   │  img7   │  ← Mosaic #2 (different combination)\n├─────────┼─────────┤\n│  img4   │  img9   │\n└─────────┴─────────┘\n",
+              "language": "",
+              "markdownBeforeBlock": "Great questions! Let me clarify how mosaic augmentation works:\n\n## 🎯 How Mosaic Augmentation Works:\n\n**No, it does NOT reduce the number of images.** Instead, it creates **new synthetic training samples** during training.\n\n### What Mosaic Does:\n\n1. **Combines 4 random images** into one composite image during each training iteration\n2. **Creates NEW training samples** on-the-fly (data augmentation happens in real-time)\n3. **Your original images remain unchanged** - they're just used to create new combinations\n\n### Example:\n- You have 100 training images\n- During training, YOLO randomly picks 4 images (e.g., images #5, #23, #67, #89)\n- It creates a mosaic by placing them in 4 quadrants\n- This creates a NEW synthetic training image\n- Next batch: picks different 4 images, creates a different mosaic\n- And so on...\n\n### Key Points:\n\n✅ **Does NOT reduce images** - You still train on all your data  \n✅ **Increases diversity** - Creates infinite combinations of your images  \n✅ **Applied randomly during training** - Not pre-generated  \n✅ **Your dataset stays intact** - Original images are never modified  \n✅ **With `mosaic=1.0`** - 100% of training batches use mosaic (until last 10 epochs due to `close_mosaic=10`)\n\n### Visual Example:\n"
+            }
+          ],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"fine_tune_yolo.py\" filePath=\"/Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py\">\n\"\"\"\nYOLOv8n Fine-tuning Script for Traffic Sign Detection\nAuthor: Walter Amador\nDate: October 1, 2025\nDescription: Fine-tune YOLOv8n model on custom traffic sign dataset\n\"\"\"\n\nimport os\nfrom pathlib import Path\nfrom ultralytics import YOLO\nimport torch\nimport yaml\n\n# Configuration\nCONFIG = {\n    \"model_name\": \"yolov8n.pt\",  # Pretrained YOLOv8 nano model\n    \"data_yaml\": \"dataset/data.yaml\",  # Path to dataset configuration\n    \"epochs\": 100,  # Number of training epochs\n    \"imgsz\": (480, 640),  # Image size for training (matches dataset 640×480)\n    \"batch\": 16,  # Batch size (adjust based on GPU memory)\n    \"patience\": 50,  # Early stopping patience\n    \"save_period\": 10,  # Save checkpoint every N epochs (-1 to disable)\n    \"save_dir\": \"runs/train\",  # Directory to save results\n    \"device\": 0 if torch.cuda.is_available() else \"cpu\",  # Use GPU if available\n    \"workers\": 8,  # Number of dataloader workers\n    \"project\": \"traffic_sign_detection\",  # Project name\n    \"name\": \"yolov8n_finetuned\",  # Experiment name\n}\n\n\ndef check_dataset(data_yaml_path):\n    \"\"\"\n    Verify dataset structure and configuration\n\n    Args:\n        data_yaml_path: Path to data.yaml file\n\n    Returns:\n        bool: True if dataset is valid, False otherwise\n    \"\"\"\n    if not os.path.exists(data_yaml_path):\n        print(f\"❌ Error: {data_yaml_path} not found!\")\n        return False\n\n    with open(data_yaml_path, \"r\") as f:\n        data = yaml.safe_load(f)\n\n    print(\"\\n📊 Dataset Configuration:\")\n    print(f\"   - Classes: {data['nc']}\")\n    print(f\"   - Names: {data['names']}\")\n    print(f\"   - Train path: {data['train']}\")\n    print(f\"   - Val path: {data['val']}\")\n    print(f\"   - Test path: {data['test']}\")\n\n    return True\n\n\ndef train_yolov8n(config):\n    \"\"\"\n    Fine-tune YOLOv8n model on custom dataset\n\n    Args:\n        config: Dictionary containing training configuration\n    \"\"\"\n    print(\"\\n\" + \"=\" * 60)\n    print(\"🚀 Starting YOLOv8n Fine-tuning\")\n    print(\"=\" * 60)\n\n    # Check if dataset exists and is valid\n    if not check_dataset(config[\"data_yaml\"]):\n        return\n\n    # Check device\n    device_name = (\n        f\"GPU ({torch.cuda.get_device_name(0)})\" if torch.cuda.is_available() else \"CPU\"\n    )\n    print(f\"\\n💻 Device: {device_name}\")\n\n    # Load pretrained YOLOv8n model\n    print(f\"\\n📥 Loading pretrained model: {config['model_name']}\")\n    model = YOLO(config[\"model_name\"])\n\n    # Display model info\n    print(f\"\\n📋 Model Information:\")\n    print(f\"   - Parameters: {sum(p.numel() for p in model.model.parameters()):,}\")\n    print(\n        f\"   - Trainable parameters: {sum(p.numel() for p in model.model.parameters() if p.requires_grad):,}\"\n    )\n\n    # Training configuration\n    print(f\"\\n⚙️  Training Configuration:\")\n    print(f\"   - Epochs: {config['epochs']}\")\n    print(f\"   - Image size: {config['imgsz']}\")\n    print(f\"   - Batch size: {config['batch']}\")\n    print(f\"   - Device: {config['device']}\")\n    print(f\"   - Workers: {config['workers']}\")\n    print(f\"   - Patience: {config['patience']}\")\n    print(f\"   - Save period: Every {config['save_period']} epochs\" if config['save_period'] > 0 else \"   - Save period: Only best and last\")\n\n    # Start training\n    print(f\"\\n🏋️  Starting training...\")\n    print(\"=\" * 60 + \"\\n\")\n\n    try:\n        results = model.train(\n            data=config[\"data_yaml\"],\n            epochs=config[\"epochs\"],\n            imgsz=config[\"imgsz\"],\n            batch=config[\"batch\"],\n            patience=config[\"patience\"],\n            save=True,\n            save_period=config[\"save_period\"],\n            device=config[\"device\"],\n            workers=config[\"workers\"],\n            project=config[\"project\"],\n            name=config[\"name\"],\n            exist_ok=True,\n            pretrained=True,\n            optimizer=\"auto\",\n            verbose=True,\n            seed=42,\n            deterministic=True,\n            single_cls=False,\n            rect=False,\n            cos_lr=False,\n            close_mosaic=10,  # Keep mosaic until last 10 epochs\n            resume=False,\n            amp=True,\n            fraction=1.0,\n            profile=False,\n            freeze=None,\n            lr0=0.01,\n            lrf=0.01,\n            momentum=0.937,\n            weight_decay=0.0005,\n            warmup_epochs=3.0,\n            warmup_momentum=0.8,\n            warmup_bias_lr=0.1,\n            box=7.5,\n            cls=0.5,\n            dfl=1.5,\n            pose=12.0,\n            kobj=1.0,\n            label_smoothing=0.0,\n            nbs=64,\n            overlap_mask=True,\n            mask_ratio=4,\n            dropout=0.0,\n            val=True,\n            plots=True,\n            # Disable all augmentations except mosaic\n            mosaic=1.0,              # ✅ Keep mosaic augmentation (probability = 1.0)\n            mixup=0.0,               # ❌ Disable mixup\n            copy_paste=0.0,          # ❌ Disable copy-paste\n            degrees=0.0,             # ❌ Disable rotation\n            translate=0.0,           # ❌ Disable translation\n            scale=0.0,               # ❌ Disable scaling\n            shear=0.0,               # ❌ Disable shear\n            perspective=0.0,         # ❌ Disable perspective\n            flipud=0.0,              # ❌ Disable vertical flip\n            fliplr=0.0,              # ❌ Disable horizontal flip\n            hsv_h=0.0,               # ❌ Disable HSV-Hue augmentation\n            hsv_s=0.0,               # ❌ Disable HSV-Saturation augmentation\n            hsv_v=0.0,               # ❌ Disable HSV-Value augmentation\n        )\n\n        print(\"\\n\" + \"=\" * 60)\n        print(\"✅ Training completed successfully!\")\n        print(\"=\" * 60)\n\n        # Print results summary\n        print(f\"\\n📈 Training Results:\")\n        print(\n            f\"   - Best epoch: {results.best_epoch if hasattr(results, 'best_epoch') else 'N/A'}\"\n        )\n        print(f\"   - Results saved to: {config['project']}/{config['name']}\")\n\n        return results\n\n    except Exception as e:\n        print(f\"\\n❌ Error during training: {str(e)}\")\n        raise\n\n\ndef validate_model(config):\n    \"\"\"\n    Validate the trained model on validation set\n\n    Args:\n        config: Dictionary containing training configuration\n    \"\"\"\n    print(\"\\n\" + \"=\" * 60)\n    print(\"🔍 Validating Model\")\n    print(\"=\" * 60)\n\n    # Find best weights\n    best_weights = f\"{config['project']}/{config['name']}/weights/best.pt\"\n\n    if not os.path.exists(best_weights):\n        print(f\"❌ Best weights not found at: {best_weights}\")\n        return\n\n    print(f\"\\n📥 Loading best weights: {best_weights}\")\n    model = YOLO(best_weights)\n\n    # Run validation\n    print(\"\\n🔍 Running validation...\")\n    metrics = model.val(data=config[\"data_yaml\"])\n\n    print(\"\\n📊 Validation Metrics:\")\n    print(f\"   - mAP50: {metrics.box.map50:.4f}\")\n    print(f\"   - mAP50-95: {metrics.box.map:.4f}\")\n    print(f\"   - Precision: {metrics.box.mp:.4f}\")\n    print(f\"   - Recall: {metrics.box.mr:.4f}\")\n\n    return metrics\n\n\ndef test_inference(config, test_image_path=None):\n    \"\"\"\n    Test inference on a sample image\n\n    Args:\n        config: Dictionary containing training configuration\n        test_image_path: Path to test image (optional)\n    \"\"\"\n    print(\"\\n\" + \"=\" * 60)\n    print(\"🖼️  Testing Inference\")\n    print(\"=\" * 60)\n\n    # Find best weights\n    best_weights = f\"{config['project']}/{config['name']}/weights/best.pt\"\n\n    if not os.path.exists(best_weights):\n        print(f\"❌ Best weights not found at: {best_weights}\")\n        return\n\n    print(f\"\\n📥 Loading best weights: {best_weights}\")\n    model = YOLO(best_weights)\n\n    # Use a test image from the dataset if none provided\n    if test_image_path is None:\n        test_dir = Path(\"dataset/test/images\")\n        if test_dir.exists():\n            test_images = list(test_dir.glob(\"*.jpg\"))\n            if test_images:\n                test_image_path = str(test_images[0])\n                print(f\"📸 Using test image: {test_image_path}\")\n\n    if test_image_path and os.path.exists(test_image_path):\n        print(\"\\n🔮 Running inference...\")\n        results = model.predict(test_image_path, save=True, conf=0.25)\n        print(f\"✅ Results saved to: runs/detect/predict/\")\n        return results\n    else:\n        print(\"❌ No test image found\")\n        return None\n\n\ndef main():\n    \"\"\"\n    Main function to orchestrate the fine-tuning process\n    \"\"\"\n    print(\"\\n\" + \"=\" * 60)\n    print(\"🤖 YOLOv8n Fine-tuning for Traffic Sign Detection\")\n    print(\"=\" * 60)\n\n    # Train the model\n    results = train_yolov8n(CONFIG)\n\n    if results:\n        # Validate the model\n        validate_model(CONFIG)\n\n        # Test inference\n        test_inference(CONFIG)\n\n    print(\"\\n\" + \"=\" * 60)\n    print(\"🎉 Process completed!\")\n    print(\"=\" * 60 + \"\\n\")\n\n\nif __name__ == \"__main__\":\n    main()\n</attachment>\n\n</attachments>\n<context>\nThe current date is October 2, 2025.\nTerminals:\nTerminal: zsh\nLast Command: python3 data_augmentation.py\nCwd: /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1\nExit Code: 0\nTerminal: zsh\n<todoList>\nNo todo list found.\n</todoList>\n\n</context>\n<editorContext>\nThe user's current file is /Users/walteramador/Documents/LU/CPSC-5366EL-Autonomous-Mobile-Robotics/Assignment_1/fine_tune_yolo.py. \n</editorContext>\n<repoContext>\nBelow is the information about the current repository. You can use this information when you need to calculate diffs or compare changes with the default branch.\nRepository name: geometric_and_yolo_obj_detection\nOwner: walter-amador\nCurrent branch: main\n\n</repoContext>\n<reminderInstructions>\nWhen using the replace_string_in_file tool, include 3-5 lines of unchanged code before and after the string you want to replace, to make it unambiguous which part of the file should be edited.\n\n</reminderInstructions>\n<userRequest>\nWill it apply the mosaic to all of the images? Does this makes it reduce the amount of images?\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "Great questions! Let me clarify how mosaic augmentation works:\n\n## 🎯 How Mosaic Augmentation Works:\n\n**No, it does NOT reduce the number of images.** Instead, it creates **new synthetic training samples** during training.\n\n### What Mosaic Does:\n\n1. **Combines 4 random images** into one composite image during each training iteration\n2. **Creates NEW training samples** on-the-fly (data augmentation happens in real-time)\n3. **Your original images remain unchanged** - they're just used to create new combinations\n\n### Example:\n- You have 100 training images\n- During training, YOLO randomly picks 4 images (e.g., images #5, #23, #67, #89)\n- It creates a mosaic by placing them in 4 quadrants\n- This creates a NEW synthetic training image\n- Next batch: picks different 4 images, creates a different mosaic\n- And so on...\n\n### Key Points:\n\n✅ **Does NOT reduce images** - You still train on all your data  \n✅ **Increases diversity** - Creates infinite combinations of your images  \n✅ **Applied randomly during training** - Not pre-generated  \n✅ **Your dataset stays intact** - Original images are never modified  \n✅ **With `mosaic=1.0`** - 100% of training batches use mosaic (until last 10 epochs due to `close_mosaic=10`)\n\n### Visual Example:\n```\nOriginal Dataset: [img1] [img2] [img3] [img4] [img5] ...\n\nDuring Training Batch 1:\n┌─────────┬─────────┐\n│  img2   │  img5   │  ← Mosaic #1\n├─────────┼─────────┤\n│  img1   │  img8   │\n└─────────┴─────────┘\n\nDuring Training Batch 2:\n┌─────────┬─────────┐\n│  img3   │  img7   │  ← Mosaic #2 (different combination)\n├─────────┼─────────┤\n│  img4   │  img9   │\n└─────────┴─────────┘\n```\n\n### Benefits for Traffic Sign Detection:\n- 🎯 Helps model learn to detect **multiple signs in one frame**\n- 📏 Exposes model to **different scales** of signs\n- 🔄 Creates **more training variety** without needing more real images\n- 🎨 Improves **generalization** to real-world scenarios\n\nSo with `mosaic=1.0`, your model will use mosaic augmentation on all training batches, effectively seeing many more training combinations than just your original dataset! 🚀",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "0c2ea504-4470-47ff-92af-d5573b78ffa1"
+            }
+          ],
+          "modelMessageId": "3d254d33-76a9-48af-9f7b-8621ef365e72",
+          "responseId": "d2898ac0-78d4-4ac8-b8b3-31b44647f93b",
+          "sessionId": "58afe44b-cc6f-452f-9b6b-288460980b72",
+          "agentId": "github.copilot.editsAgent"
+        },
+        "details": "Claude Sonnet 4.5 (Preview) • 1x"
+      },
+      "responseMarkdownInfo": [
+        {
+          "suggestionId": "sgt-4e4efc49-152a-4945-8e6e-1d52ca115cc1"
+        }
+      ],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.31.3",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1759433839109,
+      "modelId": "copilot/claude-sonnet-4.5"
+    }
+  ]
+}
