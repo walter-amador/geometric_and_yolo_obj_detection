@@ -1,3 +1,5 @@
+# Parts of the code below was generated with GitHub Copilot Agents using Claude Sonnet 4.5
+# Reference to the conversation: gx_cv_prompt.json
 import cv2
 import numpy as np
 
