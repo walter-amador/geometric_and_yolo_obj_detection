@@ -4,6 +4,7 @@
 import cv2
 from ultralytics import YOLO
 import numpy as np
+import time
 
 
 def estimate_distance(pixel_size, real_size_cm=15.0, frame_width=640):
@@ -55,7 +56,7 @@ print(f"Loaded model from: {MODEL_PATH}")
 print(f"Detected classes: {class_names}")
 
 # FPS calculation variables
-fps_counter = 0
+prev_time = time.time()
 fps_display = 0
 
 while True:
@@ -120,11 +121,10 @@ while True:
                 frame, label, (x1, y1 - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 0), 2
             )
 
-    # Display FPS
-    fps_counter += 1
-    if fps_counter % 10 == 0:
-        fps_display = fps_counter / 10
-        fps_counter = 0
+    # Calculate FPS
+    current_time = time.time()
+    fps_display = 1 / (current_time - prev_time)
+    prev_time = current_time
 
     cv2.putText(
         frame,
