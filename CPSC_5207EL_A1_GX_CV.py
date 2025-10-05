@@ -2,6 +2,7 @@
 # Reference to the conversation: gx_cv_prompt.json
 import cv2
 import numpy as np
+import time
 
 
 def estimate_distance(pixel_size, real_size_cm=7.5, frame_width=640):
@@ -33,7 +34,7 @@ def estimate_distance(pixel_size, real_size_cm=7.5, frame_width=640):
     return None
 
 
-def trackSign_CV(frame, detector, tag_to_action):
+def trackSign_CV(frame, detector, tag_to_action, fps_display=0):
     """
     Detects AprilTags (36h11 family) in the frame and returns navigation decisions.
     Estimates distance to each detected tag.
@@ -42,6 +43,7 @@ def trackSign_CV(frame, detector, tag_to_action):
         frame: Input BGR frame from camera
         detector: cv2.aruco.ArucoDetector configured for AprilTag 36h11
         tag_to_action: Dictionary mapping tag IDs to navigation actions
+        fps_display: Current FPS to display (default: 0)
 
     Returns:
         tuple: (annotated_frame, navigation_decision, detection_data)
@@ -139,12 +141,23 @@ def trackSign_CV(frame, detector, tag_to_action):
                     2,
                 )
 
+    # Display FPS
+    cv2.putText(
+        annotated_frame,
+        f"FPS: {fps_display:.1f}",
+        (10, 30),
+        cv2.FONT_HERSHEY_SIMPLEX,
+        0.7,
+        (255, 255, 255),
+        2,
+    )
+
     # Display detection count and current navigation decision
     info_text = f"Tags detected: {len(ids) if ids is not None else 0}"
     cv2.putText(
         annotated_frame,
         info_text,
-        (10, 30),
+        (10, 60),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.7,
         (0, 255, 0),
@@ -155,7 +168,7 @@ def trackSign_CV(frame, detector, tag_to_action):
         cv2.putText(
             annotated_frame,
             f"Navigation: {navigation_decision}",
-            (10, 60),
+            (10, 90),
             cv2.FONT_HERSHEY_SIMPLEX,
             0.7,
             (0, 255, 255),
@@ -206,6 +219,10 @@ def main():
         print(f"  ID {tag_id}: {action}")
     print("Press 'q' to quit")
 
+    # FPS calculation variables
+    prev_time = time.time()
+    fps_display = 0
+
     while True:
         # Capture frame-by-frame
         ret, frame = cap.read()
@@ -215,9 +232,14 @@ def main():
             print("Error: Can't receive frame. Exiting...")
             break
 
+        # Calculate FPS
+        current_time = time.time()
+        fps_display = 1 / (current_time - prev_time)
+        prev_time = current_time
+
         # Detect AprilTags and get navigation decision
         annotated_frame, navigation_decision, detection_data = trackSign_CV(
-            frame, detector, tag_to_action
+            frame, detector, tag_to_action, fps_display
         )
 
         # Display the annotated frame
