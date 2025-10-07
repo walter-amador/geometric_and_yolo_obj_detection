@@ -70,6 +70,8 @@ while True:
     # Perform inference
     results = model(frame, conf=0.5, iou=0.45, verbose=False)
 
+    closest_obj = {"class_name": None, "distance_cm": 0.0}
+
     # Process results
     for result in results:
         boxes = result.boxes
@@ -92,6 +94,13 @@ while True:
 
             # Estimate distance to the traffic sign
             distance_cm = estimate_distance(box_size, real_size_cm=8.0, frame_width=640)
+
+            if distance_cm and (distance_cm < closest_obj["distance_cm"] or closest_obj["distance_cm"] == 0.0):
+                closest_obj["distance_cm"] = distance_cm
+                closest_obj["class_name"] = class_name
+            else:
+                closest_obj["distance_cm"] = closest_obj["distance_cm"]
+                closest_obj["class_name"] = closest_obj["class_name"]
 
             # Draw bounding box
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
@@ -135,6 +144,18 @@ while True:
         (255, 255, 255),
         2,
     )
+
+    # Display closest object information
+    if closest_obj["class_name"]:
+        cv2.putText(
+            frame,
+            f"Navigation: {closest_obj['class_name']}",
+            (10, 50),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.7,
+            (0, 255, 255),
+            2,
+        )
 
     # Display the frame
     cv2.imshow("Traffic Sign Detection - Live Video", frame)
