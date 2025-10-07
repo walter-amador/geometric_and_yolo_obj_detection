@@ -36,36 +36,7 @@ def estimate_distance(pixel_size, real_size_cm=15.0, frame_width=640):
     return None
 
 
-# Load the fine-tuned YOLO model
-MODEL_PATH = "traffic_sign_detection/yolov8n_finetuned/weights/best.pt"
-model = YOLO(MODEL_PATH)
-
-# Get class names from the model
-class_names = model.names
-
-# Initialize video capture (0 for default webcam)
-cap = cv2.VideoCapture(0)
-
-# Set video properties for better performance
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-
-print("Starting live video detection...")
-print("Press 'q' to quit")
-print(f"Loaded model from: {MODEL_PATH}")
-print(f"Detected classes: {class_names}")
-
-# FPS calculation variables
-prev_time = time.time()
-fps_display = 0
-
-while True:
-    # Read frame from webcam
-    ret, frame = cap.read()
-
-    if not ret:
-        print("Failed to grab frame")
-        break
+def trackSign_ML(frame, model):
 
     # Perform inference
     results = model(frame, conf=0.5, iou=0.45, verbose=False)
@@ -95,7 +66,10 @@ while True:
             # Estimate distance to the traffic sign
             distance_cm = estimate_distance(box_size, real_size_cm=8.0, frame_width=640)
 
-            if distance_cm and (distance_cm < closest_obj["distance_cm"] or closest_obj["distance_cm"] == 0.0):
+            if distance_cm and (
+                distance_cm < closest_obj["distance_cm"]
+                or closest_obj["distance_cm"] == 0.0
+            ):
                 closest_obj["distance_cm"] = distance_cm
                 closest_obj["class_name"] = class_name
             else:
@@ -129,6 +103,41 @@ while True:
             cv2.putText(
                 frame, label, (x1, y1 - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 0), 2
             )
+    return frame, closest_obj
+
+
+# Load the fine-tuned YOLO model
+MODEL_PATH = "traffic_sign_detection/yolov8n_finetuned/weights/best.pt"
+model = YOLO(MODEL_PATH)
+
+# Get class names from the model
+class_names = model.names
+
+# Initialize video capture (0 for default webcam)
+cap = cv2.VideoCapture(0)
+
+# Set video properties for better performance
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+
+print("Starting live video detection...")
+print("Press 'q' to quit")
+print(f"Loaded model from: {MODEL_PATH}")
+print(f"Detected classes: {class_names}")
+
+# FPS calculation variables
+prev_time = time.time()
+fps_display = 0
+
+while True:
+    # Read frame from webcam
+    ret, frame = cap.read()
+
+    if not ret:
+        print("Failed to grab frame")
+        break
+
+    frame, closest_obj = trackSign_ML(frame, model)
 
     # Calculate FPS
     current_time = time.time()
