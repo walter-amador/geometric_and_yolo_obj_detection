@@ -5,3 +5,7 @@ dataset
 yolo*.pt
 
 runs
+
+*.pt
+
+best_openvino*
