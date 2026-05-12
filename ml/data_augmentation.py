@@ -2,6 +2,9 @@ import cv2
 import numpy as np
 import random
 import os
+from pathlib import Path
+
+_BASE = Path(__file__).parent.parent
 
 
 class ImageTransformer:
@@ -173,8 +176,8 @@ class PhotometricTransformer:
         return img
 
 
-raw_data_dir = "raw_data"
-resized_dir = "resized"
+raw_data_dir = str(_BASE / "raw_data")
+resized_dir = str(_BASE / "resized")
 os.makedirs(resized_dir, exist_ok=True)
 
 for filename in os.listdir(raw_data_dir):

@@ -5,6 +5,9 @@ import cv2
 from ultralytics import YOLO
 import numpy as np
 import time
+from pathlib import Path
+
+_BASE = Path(__file__).parent.parent
 
 
 def estimate_distance(pixel_size, real_size_cm=15.0, frame_width=640):
@@ -107,7 +110,7 @@ def trackSign_ML(frame, model):
 
 
 # Load the fine-tuned YOLO model
-MODEL_PATH = "traffic_sign_detection/yolov8n_finetuned/weights/best.pt"
+MODEL_PATH = str(_BASE / "models" / "yolov8n" / "weights" / "best.pt")
 model = YOLO(MODEL_PATH)
 
 # Get class names from the model

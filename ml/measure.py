@@ -7,6 +7,11 @@ import numpy as np
 import time
 import csv
 from datetime import datetime
+from pathlib import Path
+
+_BASE = Path(__file__).parent.parent
+_RESULTS_DIR = _BASE / "results"
+_RESULTS_DIR.mkdir(exist_ok=True)
 
 
 def estimate_distance(pixel_size, real_size_cm=15.0, frame_width=640):
@@ -109,7 +114,7 @@ def trackSign_ML(frame, model):
 
 
 # Load the fine-tuned YOLO model
-MODEL_PATH = "traffic_sign_detection/yolov8n_finetuned/weights/best.pt"
+MODEL_PATH = str(_BASE / "models" / "yolov8n" / "weights" / "best.pt")
 model = YOLO(MODEL_PATH)
 
 # Get class names from the model
@@ -138,7 +143,7 @@ measurement_duration = 60  # 1 minute in seconds
 
 # Create CSV filename with timestamp
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-csv_filename = f"fps_measurement_ml_{timestamp}.csv"
+csv_filename = str(_RESULTS_DIR / f"fps_measurement_ml_{timestamp}.csv")
 
 while True:
     # Read frame from webcam

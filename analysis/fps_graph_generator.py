@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
 
+_BASE = Path(__file__).parent.parent
+
 
 def load_fps_data(cv_file, ml_file):
     """
@@ -20,7 +22,9 @@ def load_fps_data(cv_file, ml_file):
     return cv_data, ml_data
 
 
-def plot_fps_comparison(cv_data, ml_data, output_dir="fps_comparison_graphs"):
+def plot_fps_comparison(cv_data, ml_data, output_dir=None):
+    if output_dir is None:
+        output_dir = str(_BASE / "results" / "fps_comparison_graphs")
     """
     Generate comparison plots for FPS data.
 
@@ -263,8 +267,8 @@ def main():
     Main function to generate FPS comparison graphs.
     """
     # File paths
-    cv_file = "fps_measurement_cv.csv"
-    ml_file = "fps_measurement_ml.csv"
+    cv_file = str(_BASE / "results" / "fps_measurement_cv.csv")
+    ml_file = str(_BASE / "results" / "fps_measurement_ml.csv")
 
     # Check if files exist
     if not Path(cv_file).exists():

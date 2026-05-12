@@ -4,20 +4,21 @@ from ultralytics import YOLO
 import torch
 import yaml
 
+_BASE = Path(__file__).parent.parent
+
 # Configuration
 CONFIG = {
     "model_name": "yolov8n.pt",  # Pretrained YOLOv8 nano model
-    "data_yaml": "dataset/data.yaml",  # Path to dataset configuration
+    "data_yaml": str(_BASE / "dataset" / "data.yaml"),
     "epochs": 100,  # Number of training epochs
     "imgsz": (480, 640),  # Image size for training (matches dataset 640×480)
     "batch": 16,  # Batch size (adjust based on GPU memory)
     "patience": 50,  # Early stopping patience
     "save_period": 10,  # Save checkpoint every N epochs (-1 to disable)
-    "save_dir": "runs/train",  # Directory to save results
     "device": 0 if torch.cuda.is_available() else "cpu",  # Use GPU if available
     "workers": 8,  # Number of dataloader workers
-    "project": "traffic_sign_detection",  # Project name
-    "name": "yolov8n_finetuned",  # Experiment name
+    "project": str(_BASE / "models"),
+    "name": "yolov8n",
 }
 
 
@@ -237,7 +238,7 @@ def test_inference(config, test_image_path=None):
 
     # Use a test image from the dataset if none provided
     if test_image_path is None:
-        test_dir = Path("dataset/test/images")
+        test_dir = _BASE / "dataset" / "test" / "images"
         if test_dir.exists():
             test_images = list(test_dir.glob("*.jpg"))
             if test_images:

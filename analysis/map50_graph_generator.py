@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
 
+_BASE = Path(__file__).parent.parent
+
 
 def load_training_results(csv_file):
     """
@@ -18,7 +20,9 @@ def load_training_results(csv_file):
     return data
 
 
-def plot_map50(data, output_dir="training_comparison_graphs"):
+def plot_map50(data, output_dir=None):
+    if output_dir is None:
+        output_dir = str(_BASE / "results" / "training_comparison_graphs")
     """
     Generate mAP@0.5 plot from training results.
     
@@ -94,7 +98,9 @@ def plot_map50(data, output_dir="training_comparison_graphs"):
     print("="*60)
 
 
-def plot_all_metrics(data, output_dir="training_comparison_graphs"):
+def plot_all_metrics(data, output_dir=None):
+    if output_dir is None:
+        output_dir = str(_BASE / "results" / "training_comparison_graphs")
     """
     Generate comprehensive training metrics plot.
     
@@ -177,7 +183,7 @@ def main():
     Main function to generate mAP@0.5 graph from training results.
     """
     # File path
-    csv_file = "traffic_sign_detection/yolov8n_finetuned/results.csv"
+    csv_file = str(_BASE / "models" / "yolov8n" / "results.csv")
     
     # Check if file exists
     if not Path(csv_file).exists():

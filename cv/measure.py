@@ -5,6 +5,10 @@ import numpy as np
 import time
 import csv
 from datetime import datetime
+from pathlib import Path
+
+_RESULTS_DIR = Path(__file__).parent.parent / "results"
+_RESULTS_DIR.mkdir(exist_ok=True)
 
 
 def estimate_distance(pixel_size, real_size_cm=7.5, frame_width=640):
@@ -232,7 +236,7 @@ def main():
     
     # Create CSV filename with timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    csv_filename = f"fps_measurement_{timestamp}.csv"
+    csv_filename = str(_RESULTS_DIR / f"fps_measurement_cv_{timestamp}.csv")
 
     while True:
         # Capture frame-by-frame
